@@ -5,15 +5,15 @@ import { MdCall, MdMail } from 'react-icons/md';
 
 const Footer = () => {
     return (
-        <footer className="relative pt-16 flex items-center justify-center">
-            <div className=" absolute top-[5rem]">
+        <footer className="relative overflow-x-hidden pt-16 flex items-center justify-center">
+            <div className=" absolute top-[3rem] sm:top-[8rem]">
                 <div
-                    className="bg-cover  bg-no-repeat py-10 md:py-20 mx-10 rounded-[1.4rem] px-20 h-fit w-fit"
+                    className="bg-cover  bg-no-repeat py-10 pt-16 md:py-20 md:mx-10 mx-4 rounded-[1.4rem] sm:px-20 px-10 h-fit w-fit"
                     style={{ backgroundImage: `url(${ctaImage})` }}
                 >
                     <div className="flex flex-wrap items-end  gap-4">
                         <div className="text-white max-w-[35rem]">
-                            <h2 className="text-4xl font-semibold mb-4 sora-500">Let’s work together</h2>
+                            <h2 className="text-4xl md:text-[2.7rem] font-semibold mb-4 sora-500 md:sora-600">Let’s work together</h2>
                             <p className=" sora-400 leading-7 text-[#f1f3fa]">Each demo built with Teba will look different. You can customize anything appearance of your website with only Link few clicks.</p>
                         </div>
                         <button className='bg-white sora-500 p-3 px-4 rounded'>
@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className=" mx-auto w-full px-28 mt-40 pt-40 bg-[#040D43]">
+            <div className=" mx-auto w-full sm:px-28 px-4 mt-[12rem] pt-[13rem] bg-[#040D43]">
                 <div className=" py-8">
                     <div className="flex flex-wrap">
                         <div className="w-full lg:w-1/3 md:w-full mb-8 xl:mb-0">

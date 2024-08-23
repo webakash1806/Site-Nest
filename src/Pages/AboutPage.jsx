@@ -2,6 +2,7 @@ import React from 'react'
 import AboutSection from '../Components/AboutSection'
 import DetailSection from '../Components/DetailSection'
 import BreadCrumbs from '../Components/BreadCrumbs';
+import TeamCarousel from '../Components/TeamSection';
 
 const AboutPage = () => {
     const breadcrumbItems = [
@@ -11,9 +12,10 @@ const AboutPage = () => {
 
     return (
         <div>
-            <BreadCrumbs headText={"Contact Us"} items={breadcrumbItems} />
+            <BreadCrumbs headText={"About Us"} items={breadcrumbItems} />
             <AboutSection />
             <DetailSection />
+            {/* <TeamCarousel /> */}
         </div>
     )
 }

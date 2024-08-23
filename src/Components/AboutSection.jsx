@@ -5,7 +5,7 @@ import shape1 from '../assets/shape1.svg'
 import shape2 from '../assets/shape2.svg'
 const AboutSection = () => {
     return (
-        <div className='flex bg-[#F5F6F7] flex-col px-[5vw] gap-8 md:flex-row md:justify-around items-center justify-center py-28 my-20 lg:pb-40'>
+        <div className='flex bg-[#F5F6F7] flex-col px-[5vw] gap-8 md:flex-row md:justify-around items-center justify-center py-28 lg:pb-40'>
             <div className='max-w-[28rem] relative sm:mb-36 md:mb-0 sm:mr-16 md:mr-0 lg:mr-20'>
                 <img src={about1} className='w-full relative z-[10]' alt="" />
                 <img src={about2} alt="" className='w-[60%] hidden md:hidden lg:block sm:block z-[11] absolute bottom-[-100px] right-[-100px]' />

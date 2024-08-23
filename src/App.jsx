@@ -7,17 +7,21 @@ import ServiceCard from './Components/ServiceCard'
 import Home from './Pages/Home'
 import ContactPage from './Pages/ContactPage'
 import Footer from './Components/Footer'
+import AboutPage from './Pages/AboutPage'
 
 const App = () => {
   return (
+    // <div className='w-full overflow-x-hidden'>
     <>
       <Header />
       <Routes>
         <Route path={'/'} element={<Home />} />
         <Route path={'/contact'} element={<ContactPage />} />
+        <Route path={'/About'} element={<AboutPage />} />
       </Routes>
       <Footer />
     </>
+    // </div>
   )
 }
 

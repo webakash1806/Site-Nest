@@ -11,7 +11,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 0) {
+            if (window.scrollY > 50) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
@@ -27,8 +27,8 @@ const Header = () => {
 
     return (
         <>
-            <div className={`  sticky top-0 z-[50] ${isScrolled ? "pb-0 bg-transparent" : "py-4 bg-[#040D43]"}`}>
-                <header className={` transition-all overflow-x-hidden duration-300 ease-in-out ${isScrolled ? 'bg-[#02082aeb]  backdrop-blur-md  text-white w-full border-b py-5 border-gray-600 rounded-none' : 'bg-white text-black w-[96%]'} py-4 px-6 rounded-lg mx-auto`}>
+            <div className={`sticky top-0 z-[50] ${isScrolled ? "pb-0 bg-transparent" : "py-4 bg-[#040D43]"}`}>
+                <header className={`transition-all overflow-x-hidden duration-300 ease-in-out ${isScrolled ? 'bg-[#02082a]  backdrop-blur-md text-white w-full border-b py-5 border-gray-600 rounded-none' : 'bg-white text-black w-[96%]'} py-4 px-6 rounded-lg mx-auto`}>
                     <nav className="flex justify-between items-center">
                         <div className="text-2xl font-bold">MyLogo</div>
                         <ul className="hidden md:flex space-x-6">
@@ -45,7 +45,6 @@ const Header = () => {
                             </button>
                         </div>
                     </nav>
-
                 </header>
             </div>
             <div className={`fixed z-[1000] top-0 right-0 h-full w-64 bg-white text-gray-800 shadow-lg transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}>
