@@ -4,7 +4,7 @@ import BlueBtn from './BlueBtn';
 
 const ContactSection = () => {
     return (
-        <div className='flex bg-[#F5F6F7] flex-col px-[4vw] gap-8 md:flex-row md:justify-around items-center justify-center py-28 my-20 lg:pb-40'>
+        <div className='flex bg-[#F5F6F7] flex-col px-[4vw] gap-8 md:flex-row md:justify-around items-center justify-center py-28 lg:pb-40'>
 
 
             {/* Left Column */}
@@ -78,7 +78,7 @@ const ContactSection = () => {
                         <textarea
                             name="textarea"
                             placeholder="Write your message"
-                            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
+                            className="w-full px-4 py-2 border rounded resize-none focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
                             rows="5"
                         ></textarea>
                     </div>

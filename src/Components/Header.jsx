@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,11 +32,10 @@ const Header = () => {
                     <nav className="flex justify-between items-center">
                         <div className="text-2xl font-bold">MyLogo</div>
                         <ul className="hidden md:flex space-x-6">
-                            <li><a href="#home" className="hover:text-blue-500">Home</a></li>
-                            <li><a href="#services" className="hover:text-blue-500">Services</a></li>
-                            <li><a href="#portfolio" className="hover:text-blue-500">Portfolio</a></li>
-                            <li><a href="#about" className="hover:text-blue-500">About</a></li>
-                            <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
+                            <li><Link to="/" className="hover:text-blue-500">Home</Link></li>
+                            <li><Link to="/Services" className="hover:text-blue-500">Services</Link></li>
+                            <li><Link to="/About" className="hover:text-blue-500">About</Link></li>
+                            <li><Link to="/Contact" className="hover:text-blue-500">Contact</Link></li>
                         </ul>
                         <div className="md:hidden">
                             <button onClick={toggleMenu} className="focus:outline-none">
@@ -57,11 +57,10 @@ const Header = () => {
                     </button>
                 </div>
                 <ul className="mt-8 space-y-4 px-4">
-                    <li><a href="#home" className="block hover:text-blue-500">Home</a></li>
-                    <li><a href="#services" className="block hover:text-blue-500">Services</a></li>
-                    <li><a href="#portfolio" className="block hover:text-blue-500">Portfolio</a></li>
-                    <li><a href="#about" className="block hover:text-blue-500">About</a></li>
-                    <li><a href="#contact" className="block hover:text-blue-500">Contact</a></li>
+                    <li><Link to="/" className="hover:text-blue-500">Home</Link></li>
+                    <li><Link to="/Services" className="hover:text-blue-500">Services</Link></li>
+                    <li><Link to="/About" className="hover:text-blue-500">About</Link></li>
+                    <li><Link to="/Contact" className="hover:text-blue-500">Contact</Link></li>
                 </ul>
             </div>
         </>
