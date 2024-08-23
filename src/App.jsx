@@ -6,6 +6,7 @@ import HeroSection from './Components/HeroSection'
 import ServiceCard from './Components/ServiceCard'
 import Home from './Pages/Home'
 import ContactPage from './Pages/ContactPage'
+import Footer from './Components/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path={'/'} element={<Home />} />
         <Route path={'/contact'} element={<ContactPage />} />
       </Routes>
+      <Footer />
     </>
   )
 }

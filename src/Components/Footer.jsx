@@ -1,0 +1,116 @@
+import React from 'react';
+import ctaImage from '../assets/footer.png';
+import { Link } from 'react-router-dom';
+import { MdCall, MdMail } from 'react-icons/md';
+
+const Footer = () => {
+    return (
+        <footer className="relative pt-16 flex items-center justify-center">
+            <div className=" absolute top-[5rem]">
+                <div
+                    className="bg-cover  bg-no-repeat py-10 md:py-20 mx-10 rounded-[1.4rem] px-20 h-fit w-fit"
+                    style={{ backgroundImage: `url(${ctaImage})` }}
+                >
+                    <div className="flex flex-wrap items-end  gap-4">
+                        <div className="text-white max-w-[35rem]">
+                            <h2 className="text-4xl font-semibold mb-4 sora-500">Let’s work together</h2>
+                            <p className=" sora-400 leading-7 text-[#f1f3fa]">Each demo built with Teba will look different. You can customize anything appearance of your website with only Link few clicks.</p>
+                        </div>
+                        <button className='bg-white sora-500 p-3 px-4 rounded'>
+                            Start a project
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className=" mx-auto w-full px-28 mt-40 pt-40 bg-[#040D43]">
+                <div className=" py-8">
+                    <div className="flex flex-wrap">
+                        <div className="w-full lg:w-1/3 md:w-full mb-8 xl:mb-0">
+                            <div className="optech-footer-textarea text-[#fff]">
+                                <Link to="/">
+                                    <img src={""} alt="Logo" className="mb-4" />
+                                </Link>
+                                <p className="text-[#e0e4ff] mb-4 sora-300 leading-8 text-[0.9rem] hover:text-white">
+                                    Each demo built with Teba will look different. You can customize almost anything in the appearance of your website with only Link few.
+                                </p>
+                                <div className="">
+                                    <ul>
+                                        <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white">
+                                            <Link to="tel:123" className="flex gap-2 items-center">
+                                                <MdCall className='text-[1.3rem]' /> +91 6207234759
+                                            </Link>
+                                        </li>
+                                        <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white">
+
+                                            <Link to="mailto:name@email.com" className="flex gap-2 items-center">
+                                                <MdMail className='text-[1.3rem]' />mthemeus@example.com
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full xl:w-1/6 md:w-1/3 mb-8 md:mb-0">
+                            <div className=" text-[#fff]">
+                                <h5 className="sora-500 text-[1.1rem]  ">Quick Links</h5>
+                                <div className='flex gap-1'>
+                                    <div className='w-[2.5rem] h-[2.8px] bg-white mb-4 mt-2 rounded-full'></div>
+                                    <div className='w-[1rem] h-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
+                                    <div className='size-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
+
+                                </div>
+                                <ul>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/about-us">About Us</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/team">Our Team</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/pricing">Pricing</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/blog">Blogs</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/contact-us">Contact Us</Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="w-full xl:w-1/4 md:w-1/3 mb-8 md:mb-0">
+                            <div className="optech-footer-menu text-[#fff]">
+                                <h5 className="sora-500 text-[1.1rem]">Services</h5>
+                                <div className='flex gap-1'>
+                                    <div className='w-[2.5rem] h-[2.8px] bg-white mb-4 mt-2 rounded-full'></div>
+                                    <div className='w-[1rem] h-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
+                                    <div className='size-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
+
+                                </div>
+                                <ul>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">UI/UX Design</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">App Development</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Digital Marketing</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Web Development</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Cyber Security</Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="w-full xl:w-1/6 md:w-1/3">
+                            <div className="optech-footer-menu text-[#fff]">
+                                <h5 className="sora-500 text-[1.1rem]">Information</h5>
+                                <div className='flex gap-1'>
+                                    <div className='w-[2.5rem] h-[2.8px] bg-white mb-4 mt-2 rounded-full'></div>
+                                    <div className='w-[1rem] h-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
+                                    <div className='size-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
+
+                                </div>
+                                <ul>
+                                    <li className=" sora-300 leading-8 text-[0.9rem] hover:text-white text-[#e0e4ff]"><Link to="/">Working Process</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Privacy Policy</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Terms &amp; Conditions</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Faqs</Link></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="sora-400 text-[1rem] text-center py-4 text-[#fff]">
+                    <p> Copyright © 2024 Site Nest. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
