@@ -39,7 +39,7 @@ const Home = () => {
             title: `Digital Marketing <br/> Services`,
             icon: icon4,
             image: service4,
-            link: "/"
+            link: "/services/digital-marketing-services"
         },
     ]
 

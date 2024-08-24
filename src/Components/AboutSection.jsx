@@ -6,11 +6,11 @@ import shape2 from '../assets/shape2.svg'
 const AboutSection = () => {
     return (
         <div className='flex bg-[#F5F6F7] flex-col px-[5vw] gap-8 md:flex-row md:justify-around items-center justify-center py-28 lg:pb-40'>
-            <div className='max-w-[28rem] relative sm:mb-36 md:mb-0 sm:mr-16 md:mr-0 lg:mr-20'>
-                <img src={about1} className='w-full relative z-[10]' alt="" />
-                <img src={about2} alt="" className='w-[60%] hidden md:hidden lg:block sm:block z-[11] absolute bottom-[-100px] right-[-100px]' />
-                <img src={shape1} alt="" className='w-[28%] hidden md:hidden lg:block sm:block  absolute top-[85px] right-[-80px]' />
-                <img src={shape2} alt="" className='w-[26%] hidden md:hidden lg:block sm:block absolute bottom-[-92px] left-[140px]' />
+            <div className='max-w-[28rem] w-full aspect-w-4 aspect-h-3  relative sm:mb-36 md:mb-0 sm:mr-16 md:mr-0 lg:mr-20'>
+                <img src={about1} className='w-full h-full relative z-[10]' alt="About main image" />
+                <img src={about2} alt="About short image" className='w-[60%] hidden md:hidden lg:block sm:block z-[11] absolute bottom-[-100px] right-[-100px]' />
+                <img src={shape1} alt="Shape 1" className='w-[28%]  hidden md:hidden lg:block sm:block  absolute top-[85px] right-[-80px]' />
+                <img src={shape2} alt="Shape 2" className='w-[26%]  hidden md:hidden lg:block sm:block absolute bottom-[-92px] left-[140px]' />
             </div>
             <div className='max-w-[33rem] md:max-w-[30rem] md:mt-2'>
                 <h1 className='sora-600 leading-[3rem] mb-4 text-[2.5rem] text-[#0A165D]'>Exclusive technology to provide IT solutions</h1>

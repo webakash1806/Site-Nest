@@ -74,7 +74,7 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className='relative w-full lg:w-[75%] lg:mt-10'>
+                <div className='relative w-full lg:w-[75%] h-auto lg:mt-10'>
                     {/* Top-left gradient background */}
                     <div
                         className='absolute w-[30rem] lg:size-[35rem] h-[30rem] top-[-65%] lg:left-[-30%] lg:top-[-50%] left-[-40%] rounded-full z-0'
@@ -87,12 +87,12 @@ const HeroSection = () => {
                         src={heroImg}
                         alt="Hero Section Image"
                         loading='lazy'
-                        className="h-auto  relative z-[100] rounded-md"
+                        className="h-full w-full  relative z-[100] rounded-md"
                     />
 
                     {/* Bottom-right gradient background */}
                     <div
-                        className='absolute w-[30rem] lg:size-[35rem] h-[30rem] bottom-[-80%] lg:right-[-30%] lg:bottom-[-60%] right-[-40%] rounded-full z-0'
+                        className='absolute w-[30rem] lg:h-[35rem] lg:w-[35rem]  h-[30rem] bottom-[-80%] lg:right-[-30%] lg:bottom-[-60%] right-[-40%] rounded-full z-0'
                         style={{
                             background: 'radial-gradient(circle, rgba(36, 67, 230, 1) 2%, rgba(36, 67, 230, 0) 65%)',
                         }}
