@@ -5,6 +5,7 @@ import Footer from './Components/Footer';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css'; // Import NProgress styles
 import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
+import ServicePage from './Pages/ServicePage';
 
 // Lazy load components
 const Home = React.lazy(() => import('./Pages/Home'));
@@ -54,6 +55,7 @@ const App = () => {
           <Route path='/services/ecommerce-services' element={<EcommerceService />} />
           <Route path='/services/graphic-services' element={<GraphicDesignService />} />
           <Route path='/services/digital-marketing-services' element={<DigitalMarketingService />} />
+          <Route path='/services' element={<ServicePage />} />
         </Routes>
       </Suspense>
       <Footer />

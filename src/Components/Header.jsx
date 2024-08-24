@@ -118,11 +118,11 @@ const Header = () => {
                 </header>
             </div>
             {/* Black Overlay */}
-            {isOpen && <div className="fixed inset-0 bg-black opacity-50 z-[30]" onClick={() => setIsOpen(false)}></div>}
+            {isOpen && <div className="fixed inset-0 bg-[#00072c] opacity-70 z-[30]" onClick={() => setIsOpen(false)}></div>}
             {/* Mobile Menu */}
             <div
                 ref={menuRef}
-                className={`fixed  w-[15rem] transition-all duration-500 top-[5.5rem] right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg transform ${isOpen ? 'open-menu z-[100]' : 'close-menu z-[35]'} md:hidden`}
+                className={`fixed  w-[15rem] transition-all duration-500  right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg transform ${isOpen ? 'open-menu z-[100] top-[5.5rem]' : 'close-menu z-[35] top-[3.5rem]'} md:hidden`}
             >
                 <ul className="mt-8 space-y-4 px-4 sora-500">
                     <li>
