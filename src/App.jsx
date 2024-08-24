@@ -8,6 +8,8 @@ import Home from './Pages/Home'
 import ContactPage from './Pages/ContactPage'
 import Footer from './Components/Footer'
 import AboutPage from './Pages/AboutPage'
+import WebService from './Pages/WebService'
+import EcommerceService from './Pages/EcommerceService'
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Route path={'/'} element={<Home />} />
         <Route path={'/contact'} element={<ContactPage />} />
         <Route path={'/About'} element={<AboutPage />} />
+        <Route path={'/services/web-services'} element={<WebService />} />
+        <Route path={'/services/ecommerce-services'} element={<EcommerceService />} />
       </Routes>
       <Footer />
     </>

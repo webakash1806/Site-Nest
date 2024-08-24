@@ -23,13 +23,13 @@ const Home = () => {
             title: "Ecommerce Setup <br/> Services",
             icon: icon1,
             image: service1,
-            link: "/"
+            link: "/services/ecommerce-services"
         },
         {
             title: "Website Development <br/> Services",
             icon: icon2,
             image: service2,
-            link: "/"
+            link: "/services/web-services"
         }, {
             title: "Graphic Designing <br/> Services",
             icon: icon3,
