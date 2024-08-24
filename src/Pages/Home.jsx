@@ -34,7 +34,7 @@ const Home = () => {
             title: "Graphic Designing <br/> Services",
             icon: icon3,
             image: service3,
-            link: "/"
+            link: "/services/graphic-services"
         }, {
             title: `Digital Marketing <br/> Services`,
             icon: icon4,

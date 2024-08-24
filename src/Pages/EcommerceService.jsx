@@ -61,7 +61,7 @@ const EcommerceService = () => {
                     </div>
                 </div>
             </section>
-            <CTAsection />
+            <CTAsection text={"Looking to expand your business online with an e-commerce store? Contact us today to build a user-friendly, revenue-generating e-commerce website tailored to your needs!"} msg={""} />
             <WebsiteDevelopmentCard />
         </div>
     );
