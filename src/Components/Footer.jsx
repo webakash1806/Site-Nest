@@ -30,8 +30,8 @@ const Footer = () => {
                                 <Link to="/">
                                     <img src={""} alt="Logo" className="mb-4" />
                                 </Link>
-                                <p className="text-[#e0e4ff] mb-4 sora-300 leading-8 text-[0.9rem] hover:text-white">
-                                    Each demo built with Teba will look different. You can customize almost anything in the appearance of your website with only Link few.
+                                <p className="text-[#e0e4ff] mb-4 sora-300 leading-8 text-[0.9rem] hover:text-white pr-10">
+                                    Transform your vision into reality with our expert IT services. From innovative development to tailored solutions, we engineer every project for success, ensuring your goals are achieved with precision and excellence.
                                 </p>
                                 <div className="">
                                     <ul>

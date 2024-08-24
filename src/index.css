@@ -41,3 +41,33 @@
   font-weight: 300;
   font-style: normal;
 }
+
+/* Header.css */
+
+/* Transition styles for mobile menu */
+.open-menu {
+  right: 10;
+  height: 80vh;
+  transition: height 0.3s ease-out;
+}
+
+.close-menu {
+  height: 0;
+  transition: height 0.3s ease-in, right 0.3s ease-in;
+}
+
+/* Ensure the menu remains hidden with zero height when closed */
+.close-menu {
+  height: 0;
+
+  overflow: hidden;
+}
+
+/* For the overlay to cover the entire screen */
+.fixed.inset-0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
