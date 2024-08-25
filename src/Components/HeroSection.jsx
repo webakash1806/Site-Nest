@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import heroImg from '../assets/hero-thumb2.png';
 import BlueBtn from './BlueBtn';
+import { Link } from 'react-router-dom';
 
 // Install Swiper modules
 SwiperCore.use([Autoplay, Pagination]);
@@ -15,6 +16,8 @@ SwiperCore.use([Autoplay, Pagination]);
 const HeroSection = () => {
     const width = window.innerWidth;
 
+    const phoneNumber = "916207234759"; // Replace with your phone number
+    const message = "Hello! I would like to inquire about your services."; // Replace with your default message
 
 
 
@@ -66,10 +69,10 @@ const HeroSection = () => {
                             We design and develop visually stunning and highly functional websites, along with captivating graphics, to elevate your brand's presence, engage your audience, and drive measurable success across all digital platforms.
                         </p>
                         <div className="flex space-x-4">
-                            <BlueBtn text={"Talk with us"} />
-                            <button className="text-blue-700 font-semibold bg-white px-6 py-[0.5rem] rounded-md transition">
+                            <BlueBtn to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} text={"Talk with us"} />
+                            <Link to='/services' className="px-6 font-semibold text-blue-700 transition py-[1rem] bg-white rounded-md">
                                 Our Services
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -102,8 +105,8 @@ const HeroSection = () => {
 
             {/* Client Carousel */}
             <section className="relative py-16 bg-[#040D43]">
-                <div className=" mx-auto px-4">
-                    <h2 className="text-white text-3xl md:text-4xl font-bold mb-8 text-center">
+                <div className="px-4 mx-auto ">
+                    <h2 className="mb-8 text-3xl font-bold text-center text-white md:text-4xl">
                         Our Happy Clients
                     </h2>
                     <Swiper

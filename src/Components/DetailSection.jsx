@@ -3,9 +3,9 @@ import about1 from '../assets/about1.png'
 import about2 from '../assets/about2.png'
 import shape1 from '../assets/shape1.svg'
 import shape2 from '../assets/shape2.svg'
-import icon1 from '../assets/icon1.svg'
+import icon1 from '../assets/icon5.svg'
 import icon10 from '../assets/icon10.svg'
-import icon3 from '../assets/icon3.svg'
+import icon3 from '../assets/icon6.svg'
 const DetailSection = () => {
     return (
         <div className='flex flex-col px-[5vw] gap-8 md:flex-row-reverse md:justify-around items-center justify-center py-28 my-20 lg:pb-40'>
@@ -18,33 +18,33 @@ const DetailSection = () => {
             <div className='max-w-[33rem] md:max-w-[32rem] md:mt-2'>
                 <h1 className='sora-600 leading-[3rem] mb-4 text-[2.5rem] text-[#0A165D]'>Providing IT solutions & services for startups</h1>
 
-                <div className='flex mt-8 gap-3 items-start justify-center'>
+                <div className='flex items-start justify-center gap-3 mt-8'>
                     <div className='bg-[#EEF1FF] mt-1 w-fit p-4 rounded-md'>
                         <img src={icon10} alt="" className='w-[4.5rem] h-auto' />
                     </div>
                     <div>
                         <h1 className='text-[1.35rem] text-[#0A165E] sora-600 mb-3'>Quality Solution for Business</h1>
-                        <p className='sora-400 leading-6 text-[#535760]'>Each demo built with Teba will look different. customize almost anything in the appearance of your</p>
+                        <p className='sora-400 leading-6 text-[#535760]'>Delivering high-quality solutions to enhance business performance, drive growth, and achieve strategic objectives efficiently.</p>
 
                     </div>
                 </div>
-                <div className='flex gap-3 my-10 items-start justify-center'>
+                <div className='flex items-start justify-center gap-3 my-10'>
                     <div className='bg-[#EEF1FF] mt-1 w-fit p-4 rounded-md'>
                         <img src={icon1} alt="" className='w-[4.5rem] h-auto' />
                     </div>
                     <div>
                         <h1 className='text-[1.35rem] text-[#0A165E] sora-600 mb-3'>Amazing Expert Teams</h1>
-                        <p className='sora-400 leading-6 text-[#535760]'>Each demo built with Teba will look different. customize almost anything in the appearance of your</p>
+                        <p className='sora-400 leading-6 text-[#535760]'>Amazing expert teams delivering innovative solutions, driving success, and exceeding expectations through collaboration and expertise.</p>
 
                     </div>
                 </div>
-                <div className='flex gap-3 items-start justify-center'>
+                <div className='flex items-start justify-center gap-3'>
                     <div className='bg-[#EEF1FF] mt-1 w-fit p-4 rounded-md'>
                         <img src={icon3} alt="" className='w-[4.5rem] h-auto' />
                     </div>
                     <div>
                         <h1 className='text-[1.35rem] text-[#0A165E] sora-600 mb-3'>Urgent Support For Clients</h1>
-                        <p className='sora-400 leading-6 text-[#535760]'>Each demo built with Teba will look different. customize almost anything in the appearance of your</p>
+                        <p className='sora-400 leading-6 text-[#535760]'>Providing urgent support for clients to resolve issues quickly and ensure continuous, uninterrupted business operations.</p>
 
                     </div>
                 </div>

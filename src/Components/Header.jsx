@@ -60,9 +60,9 @@ const Header = () => {
                         : 'bg-white text-black w-[96%]'
                         } py-4 px-6 rounded-lg mx-auto`}
                 >
-                    <nav className="flex justify-between items-center">
+                    <nav className="flex items-center justify-between">
                         <div className="text-2xl font-bold">MyLogo</div>
-                        <ul className="hidden md:flex space-x-6 sora-500">
+                        <ul className="hidden space-x-6 md:flex sora-500">
                             <li>
                                 <Link
                                     to="/"
@@ -77,6 +77,22 @@ const Header = () => {
                                     className={`border-b-2 transition-all duration-300 ${isActive('/Services') ? 'text-[#2B4DFF] border-[#2B4DFF]' : 'border-transparent hover:text-[#2B4DFF] hover:border-[#2B4DFF]'}`}
                                 >
                                     Services
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/services/web-services"
+                                    className={`border-b-2 transition-all duration-300 ${isActive('/services/web-services') ? 'text-[#2B4DFF] border-[#2B4DFF]' : 'border-transparent hover:text-[#2B4DFF] hover:border-[#2B4DFF]'}`}
+                                >
+                                    Web Development
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/services/graphic-services"
+                                    className={`border-b-2 transition-all duration-300 ${isActive('/services/graphic-services') ? 'text-[#2B4DFF] border-[#2B4DFF]' : 'border-transparent hover:text-[#2B4DFF] hover:border-[#2B4DFF]'}`}
+                                >
+                                    Graphic Design
                                 </Link>
                             </li>
                             <li>
@@ -124,7 +140,7 @@ const Header = () => {
                 ref={menuRef}
                 className={`fixed  w-[15rem] transition-all duration-500  right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg transform ${isOpen ? 'open-menu z-[100] top-[5.5rem]' : 'close-menu z-[35] top-[3.5rem]'} md:hidden`}
             >
-                <ul className="mt-8 space-y-4 px-4 sora-500">
+                <ul className="px-4 mt-8 space-y-4 sora-500">
                     <li>
                         <Link
                             to="/"
@@ -141,6 +157,22 @@ const Header = () => {
                             onClick={() => setIsOpen(false)}
                         >
                             Services
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/services/web-services"
+                            className={`border-b-2 transition-all duration-300 ${isActive('/services/web-services') ? 'text-[#2B4DFF] border-[#2B4DFF]' : 'border-transparent hover:text-[#2B4DFF] hover:border-[#2B4DFF]'}`}
+                        >
+                            Web Development
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/services/graphic-services"
+                            className={`border-b-2 transition-all duration-300 ${isActive('/services/graphic-services') ? 'text-[#2B4DFF] border-[#2B4DFF]' : 'border-transparent hover:text-[#2B4DFF] hover:border-[#2B4DFF]'}`}
+                        >
+                            Graphic Design
                         </Link>
                     </li>
                     <li>

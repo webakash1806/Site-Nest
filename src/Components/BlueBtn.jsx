@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const BlueBtn = ({ text }) => {
+const BlueBtn = ({ text, to }) => {
     return (
-        <button
+        <Link to={to} target='_blank'
             className="relative flex items-center px-8  py-4 overflow-hidden font-medium transition-all bg-[#2B4DFF] rounded-md group"
         >
             <span
@@ -26,7 +27,7 @@ const BlueBtn = ({ text }) => {
                 className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white"
             >{text}</span
             >
-        </button>
+        </Link>
     )
 }
 

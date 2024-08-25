@@ -3,6 +3,7 @@ import about1 from '../assets/about1.png'
 import about2 from '../assets/about2.png'
 import shape1 from '../assets/shape1.svg'
 import shape2 from '../assets/shape2.svg'
+import { Link } from 'react-router-dom'
 const AboutSection = () => {
     return (
         <div className='flex bg-[#F5F6F7] flex-col px-[5vw] gap-8 md:flex-row md:justify-around items-center justify-center py-28 lg:pb-40'>
@@ -14,7 +15,7 @@ const AboutSection = () => {
             </div>
             <div className='max-w-[33rem] md:max-w-[30rem] md:mt-2'>
                 <h1 className='sora-600 leading-[3rem] mb-4 text-[2.5rem] text-[#0A165D]'>Exclusive technology to provide IT solutions</h1>
-                <p className='sora-400 leading-[1.85rem] text-[#535760]'>Each demo built with Teba will look different. You can customize almost anything in the appearance of your website with only a few clicks. Each demo built with Teba will look different.</p>
+                <p className='sora-400 leading-[1.85rem] text-[#535760]'>Leveraging exclusive technology to deliver cutting-edge IT solutions that streamline operations, enhance productivity, and drive digital transformation for businesses across diverse industries and sectors.</p>
                 <div className='flex my-12'>
                     <div className='w-[50%]'>
                         <p className='sora-600 text-[3.2rem] leading-[3rem] tracking-wide text-[#0A165D]'>70+</p>
@@ -25,8 +26,8 @@ const AboutSection = () => {
                         <p className='sora-400 text-[#535760]'>Projects delivered</p>
                     </div>
                 </div>
-                <button
-                    className="relative flex items-center px-8  py-4 overflow-hidden font-medium transition-all bg-[#2B4DFF] rounded-md group"
+                <Link to={'/about'}
+                    className="relative flex items-center px-8  py-4 overflow-hidden w-fit font-medium transition-all bg-[#2B4DFF] rounded-md group"
                 >
                     <span
                         className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-[#0f29bd] rounded group-hover:-mr-4 group-hover:-mt-4"
@@ -49,7 +50,7 @@ const AboutSection = () => {
                         className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white"
                     >More about us</span
                     >
-                </button>
+                </Link>
 
             </div>
         </div>
