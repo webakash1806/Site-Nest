@@ -1,7 +1,8 @@
 import React from 'react'
 import CTAbg from '../assets/CTA.png'
+import { Link } from 'react-router-dom'
 
-const CTAsection = ({ text, msg }) => {
+const CTAsection = ({ text, msg, to }) => {
   return (
     <div className="container mx-auto mt-10 w-fit">
       <div
@@ -13,9 +14,9 @@ const CTAsection = ({ text, msg }) => {
             <h2 className="text-4xl md:text-[2.7rem] font-semibold mb-4 sora-500 md:sora-600">Let’s work together</h2>
             <p className=" sora-400 leading-7 text-[#f1f3fa]">{text}</p>
           </div>
-          <button className='p-3 px-10 bg-white rounded sora-500'>
+          <Link to={to} target='_blank' className='p-3 px-10 bg-white rounded sora-500'>
             {msg}
-          </button>
+          </Link>
         </div>
       </div>
     </div>

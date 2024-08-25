@@ -1,9 +1,6 @@
 import React from 'react'
 import BreadCrumbs from '../Components/BreadCrumbs'
-import illustration1 from '../assets/illustration1.svg'
-import illustration2 from '../assets/illustration2.svg'
-import illustration3 from '../assets/illustration3.svg'
-import line from '../assets/line.png'
+
 import ServiceCard from '../Components/ServiceCard'
 import icon1 from '../assets/icon1.svg'
 import icon2 from '../assets/icon2.svg'
@@ -16,9 +13,11 @@ import service4 from '../assets/service4.png'
 import WebsiteDevelopmentCard from '../Components/WebsiteDevelopmentCard'
 import DetailSection from '../Components/DetailSection'
 import CTAsection from '../Components/CTAsection'
+import WorkingProcess from '../Components/WorkingProcess'
 
 const ServicePage = () => {
-
+    const phoneNumber = "916207234759"; // Replace with your phone number
+    const message = "Hello! I would like to start a project.";
     const data = [
         {
             title: "Ecommerce Setup <br/> Services",
@@ -52,68 +51,6 @@ const ServicePage = () => {
     return (
         <div className='overflow-x-hidden'>
             <BreadCrumbs headText={"Our Services"} items={breadcrumbItems} />
-            <div className="container relative px-4 py-8 mx-auto mt-10">
-                {/* Section Title */}
-                <div className="text-center flex flex-col items-center justify-center mb-12 mx-auto max-w-[28rem] sora-700">
-                    <h2 className="text-3xl text-[#040D43]">Our working process on how to grow your business</h2>
-                </div>
-
-                {/* Process Steps */}
-                <div className="container flex flex-col mx-auto w-fit lg:justify-around lg:gap-20 lg:flex-row">
-                    {/* Step 1 */}
-                    <div className="px-4 mb-8 " data-aos="fade-up" data-aos-duration="600">
-                        <div className="flex flex-col items-center ">
-
-                            <div className="w-[15rem] h-[15rem] flex-shrink-0">
-
-                                <img src={illustration1} alt="Initiation & Planning" className="object-contain w-full h-full" />
-                            </div>
-                            <div className='flex items-center text-center max-w-[20rem] justify-center flex-col'>
-                                <span className="text-xl font-bold bg-[#2B4DFF] text-white p-[9.5px] size-12 rounded-full">01</span>
-                                <h4 className="mt-2 text-xl font-semibold">Initiation & Planning</h4>
-                                <p className="mt-2 text-gray-700 sora-400 text-[0.95rem]">We are architects innovation trailblazers of technological advancement</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Step 2 */}
-                    <div className="px-4 mb-8 " data-aos="fade-up" data-aos-duration="800">
-                        <div className="flex flex-col items-center ">
-                            <div className="w-[15rem] h-[15rem] flex-shrink-0">
-
-                                <img src={illustration2} alt="Execution & Development" className="object-contain w-full h-full" />
-                            </div>
-                            <div className='flex items-center text-center justify-center flex-col max-w-[20rem]'>
-                                <span className="text-xl font-bold bg-[#2B4DFF] text-white p-[9.5px] size-12 rounded-full">02</span>
-
-                                <h4 className="mt-2 text-xl font-semibold">Execution & Development</h4>
-                                <p className="mt-2  text-gray-700 sora-400 text-[0.95rem]">We are architects innovation trailblazers of technological advancement</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Step 3 */}
-                    <div className="px-4 mb-8 " data-aos="fade-up" data-aos-duration="1000">
-                        <div className="flex flex-col items-center ">
-
-                            <div className="w-[15rem] h-[15rem] flex-shrink-0">
-                                <img src={illustration3} alt="Testing & Maintenance" className="object-contain w-full h-full" />
-                            </div>
-                            <div className='flex items-center text-center max-w-[20rem] justify-center flex-col'>
-                                <span className="text-xl font-bold bg-[#2B4DFF] text-white p-[9.5px] size-12 rounded-full">03</span>
-
-                                <h4 className="mt-2 text-xl font-semibold">Testing & Maintenance</h4>
-                                <p className="mt-2 text-gray-700 sora-400 text-[0.95rem]">We are architects innovation trailblazers of technological advancement</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Line Image */}
-                <div className="flex absolute w-full items-center top-[24rem] z-[-1] justify-center mt-8">
-                    <img src={line} alt="Line" className="hidden w-fit lg:block" />
-                </div>
-            </div>
 
             <div className='flex flex-col items-center justify-center mt-20 mb-20 lg:mt-28'>
                 <h1 className='sora-700 leading-[3rem] text-center mb-4 text-[2.2rem] md:text-[3rem] md:leading-[3.3rem] max-w-[25rem] sm:max-w-full text-[#0A165D]'>Our <br className='md:hidden' /> awesome services to <br className='hidden sm:block' /> give you success</h1>
@@ -121,11 +58,13 @@ const ServicePage = () => {
                     {data?.map((dat, ind) => <ServiceCard key={ind} data={dat} />)}
                 </div>
             </div>
+            <WorkingProcess />
 
             <CTAsection
                 text="Looking to get a free quotation for our services?
                 Contact us today and receive a detailed quotation tailored to your needs!"
-
+                msg={"Contact us"}
+                to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
             />
             <DetailSection />
 

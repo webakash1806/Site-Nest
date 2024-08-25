@@ -37,7 +37,8 @@ const ContactSection = () => {
                             <div className='sora-400 text-[1rem] text-[#535760] space-y-1'>
                                 <h2 className="text-[#0A165D] text-[1.3rem] sora-600 mb-2">Contact</h2>
                                 <a href="mailto:info@mthemeus.com" className="block">info@domain.com</a>
-                                <a href="tel:518-564-3200" className="block"></a>
+                                <a href="tel:6207234759" className="block">+91 6207234759</a>
+                                <a href="tel:8115544102" className="block">+91 8115544102</a>
                             </div>
                         </div>
                     </div>

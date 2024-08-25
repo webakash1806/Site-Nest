@@ -8,7 +8,7 @@ import icon10 from '../assets/icon10.svg'
 import icon3 from '../assets/icon6.svg'
 const DetailSection = () => {
     return (
-        <div className='flex flex-col px-[5vw] gap-8 md:flex-row-reverse md:justify-around items-center justify-center py-28 my-20 lg:pb-40'>
+        <div className='flex bg-[#F5F6F7] flex-col px-[5vw] gap-8 md:flex-row-reverse md:justify-around items-center justify-center py-28 my-20 lg:pb-40'>
             <div className='max-w-[28rem] w-full aspect-w-4 aspect-h-3 relative sm:mb-36 md:mb-0 sm:ml-16 md:ml-0 lg:ml-20'>
                 <img src={about1} className='w-full h-full relative z-[10]' alt="" />
                 <img src={about2} alt="" className='w-[60%] h-auto hidden md:hidden lg:block sm:block z-[11] absolute bottom-[-100px] left-[-100px]' />
@@ -16,7 +16,7 @@ const DetailSection = () => {
                 <img src={shape2} alt="" className='w-[26%] hidden h-auto md:hidden lg:block sm:block absolute bottom-[-92px] right-[140px]' />
             </div>
             <div className='max-w-[33rem] md:max-w-[32rem] md:mt-2'>
-                <h1 className='sora-600 leading-[3rem] mb-4 text-[2.5rem] text-[#0A165D]'>Providing IT solutions & services for startups</h1>
+                <h1 className='sora-600 leading-[3rem] mb-4 text-[2.5rem] text-[#0A165D]'>Providing IT solutions & services for Business</h1>
 
                 <div className='flex items-start justify-center gap-3 mt-8'>
                     <div className='bg-[#EEF1FF] mt-1 w-fit p-4 rounded-md'>
