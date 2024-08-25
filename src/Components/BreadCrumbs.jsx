@@ -13,8 +13,8 @@ const BreadCrumbs = ({ items, headText }) => {
                     opacity: 0.2,
                 }}
             ></div>
-            <h1 className='text-white sora-600 text-[2.5rem] mb-2'>{headText}</h1>
-            <nav className="flex items-center relative z-[10]  justify-center p-1 space-x-2 text-gray-300">
+            <h1 className='text-white text-center sora-600 text-[2.5rem] mb-2'>{headText}</h1>
+            <nav className="flex items-center relative z-[30]  justify-center p-1 space-x-2 text-gray-300">
                 {items?.map((item, index) => (
                     <React.Fragment key={index}>
                         {index > 0 && <span className="text-white"><MdKeyboardArrowRight className='text-[1.5rem] mt-[0.2rem]' /></span>}

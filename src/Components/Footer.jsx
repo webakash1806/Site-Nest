@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             <div className=" mx-auto w-full sm:px-28 px-4 mt-[12rem] pt-[13rem] bg-[#040D43]">
                 <div className="py-8 ">
-                    <div className="flex flex-wrap">
+                    <div className="flex flex-wrap items-center justify-around">
                         <div className="w-full mb-8 lg:w-1/3 md:w-full xl:mb-0">
                             <div className="optech-footer-textarea text-[#fff]">
                                 <Link to="/">
@@ -39,38 +39,21 @@ const Footer = () => {
                                 <div className="">
                                     <ul>
                                         <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white">
-                                            <Link to="tel:123" className="flex items-center gap-2">
+                                            <Link to="tel:6207234759" className="flex items-center gap-2">
                                                 <MdCall className='text-[1.3rem]' /> +91 6207234759
                                             </Link>
                                         </li>
                                         <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white">
 
                                             <Link to="mailto:name@email.com" className="flex items-center gap-2">
-                                                <MdMail className='text-[1.3rem]' />mthemeus@example.com
+                                                <MdMail className='text-[1.3rem]' />contact@domain.com
                                             </Link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full mb-8 xl:w-1/6 md:w-1/3 md:mb-0">
-                            <div className=" text-[#fff]">
-                                <h5 className="sora-500 text-[1.1rem]  ">Quick Links</h5>
-                                <div className='flex gap-1'>
-                                    <div className='w-[2.5rem] h-[2.8px] bg-white mb-4 mt-2 rounded-full'></div>
-                                    <div className='w-[1rem] h-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
-                                    <div className='size-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
 
-                                </div>
-                                <ul>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/about-us">About Us</Link></li>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/team">Our Team</Link></li>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/pricing">Pricing</Link></li>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/blog">Blogs</Link></li>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/contact-us">Contact Us</Link></li>
-                                </ul>
-                            </div>
-                        </div>
                         <div className="w-full mb-8 xl:w-1/4 md:w-1/3 md:mb-0">
                             <div className="optech-footer-menu text-[#fff]">
                                 <h5 className="sora-500 text-[1.1rem]">Services</h5>
@@ -81,11 +64,12 @@ const Footer = () => {
 
                                 </div>
                                 <ul>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">UI/UX Design</Link></li>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">App Development</Link></li>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Digital Marketing</Link></li>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Web Development</Link></li>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Cyber Security</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/services/web-services">Website Development</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/services/e-commerce-services">E-commerce Website</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/services/graphic-services">UI/UX Design</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/services/graphic-services">Graphic Design</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/services/digital-marketing-services">Digital Marketing</Link></li>
+
                                 </ul>
                             </div>
                         </div>

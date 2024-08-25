@@ -23,7 +23,7 @@ const Home = () => {
             title: "Ecommerce Setup <br/> Services",
             icon: icon1,
             image: service1,
-            link: "/services/ecommerce-services"
+            link: "/services/e-commerce-services"
         },
         {
             title: "Website Development <br/> Services",
