@@ -79,7 +79,7 @@ const TeamCarousel = () => {
         slidesToScroll: 1,
     };
     return (
-        <div className=" py-12 overflow-x-hidden">
+        <div className="py-12 overflow-x-hidden ">
             <div className="">
                 <div className="text-center max-w-[26rem] mx-auto mb-8">
                     <h2 className='sora-700 leading-[3rem] text-center mb-4 text-[2.2rem] md:text-[3rem] md:leading-[3.3rem]  sm:max-w-full text-[#0A165D]'>Our expert team is always ready to help you</h2>
@@ -89,25 +89,25 @@ const TeamCarousel = () => {
                         <div key={index} className="">
                             <div className="border group hover:shadow-md border-gray-200 w-[18rem] bg-white rounded-xl overflow-hidden  mx-auto">
                                 <div className="relative overflow-hidden ">
-                                    <img src={member.image} alt={member.name} className="w-full h-auto translate-transform group-hover:scale-110 duration-700 object-cover" />
+                                    <img src={member.image} alt={member.name} className="object-cover w-full h-auto duration-700 translate-transform group-hover:scale-110" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#040D43] via-transparent to-transparent flex  items-end pb-6 justify-center hover:from-[10%] hover:from-[#2B4DFF]  hover:to-transparent transition-all duration-300">
 
                                         <div className="absolute flex gap-3">
-                                            <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" className="bg-white size-9 flex group-hover:text-blue-600 items-center justify-center rounded text-xl">
+                                            <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-xl bg-white rounded size-9 group-hover:text-blue-600">
                                                 <i className="ri-linkedin-fill"></i>
                                             </a>
-                                            <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" className="bg-white size-9 flex group-hover:text-blue-600 items-center justify-center rounded text-xl">
+                                            <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-xl bg-white rounded size-9 group-hover:text-blue-600">
                                                 <i className="ri-twitter-fill"></i>
                                             </a>
-                                            <a href={member.social.instagram} target="_blank" rel="noopener noreferrer" className="bg-white size-9 flex group-hover:text-blue-600 items-center justify-center rounded text-xl">
+                                            <a href={member.social.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-xl bg-white rounded size-9 group-hover:text-blue-600">
                                                 <i className="ri-instagram-fill"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-center my-4">
+                                <div className="my-4 text-center">
                                     <a href="/single-team" className="block">
-                                        <h5 className="text-xl font-medium text-gray-800">{member.name}</h5>
+                                        <h2 className="text-xl font-medium text-gray-800">{member.name}</h2>
                                     </a>
                                     <p className="text-gray-600">{member.role}</p>
                                 </div>

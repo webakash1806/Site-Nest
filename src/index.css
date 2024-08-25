@@ -12,6 +12,8 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
+
 }
 
 .sora-600 {
@@ -19,6 +21,7 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 .sora-500 {
@@ -26,6 +29,8 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
+
 }
 
 .sora-400 {
@@ -33,6 +38,8 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+
 }
 
 .sora-300 {
@@ -40,6 +47,8 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
+
 }
 
 /* Header.css */

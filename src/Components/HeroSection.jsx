@@ -58,14 +58,14 @@ const HeroSection = () => {
 
             <div className="relative justify-center z-10 sm:w-[80%] w-[99%] lg:w-[95%] px-4 mx-auto text-center  flex flex-col items-center">
                 <div className='relative lg:flex-row lg:justify-between min-h-[66vh] mb-20 z-[100] flex items-center justify-center flex-col'>
-                    <h1 className="text-white text-[2rem] sm:text-[2.8rem] sora-600 md:text-[3.8rem] lg:text-[4rem] lg:text-start mb-4 leading-[2.8rem] sm:leading-[3.2rem] md:leading-[5rem] lg:leading-[5.7rem]">
+                    <h1 className="text-white text-[1.8rem] sm:text-[2.5rem] sora-600 md:text-[3rem] lg:text-[3.8rem] lg:text-start mb-4 leading-[2.8rem] sm:leading-[3.2rem] md:leading-[4.5rem] lg:leading-[5.7rem]">
                         Your Vision,
                         <br /> Our Development,
                         <br />
                         Engineered for Success
                     </h1>
                     <div className='flex flex-col lg:items-start mb-8 lg:w-[35%] mt-2 md:mt-0 items-center justify-center'>
-                        <p className="text-white leading-[1.8rem] lg:text-start sora-400 text-[1rem] lg:text-[1.1rem] mb-8 tracking-wide">
+                        <p className="text-white leading-[1.8rem] lg:text-start sora-400 text-[0.95rem] sm:text-[1rem] lg:text-[1.1rem] mb-8 tracking-wide">
                             We design and develop visually stunning and highly functional websites, along with captivating graphics, to elevate your brand's presence, engage your audience, and drive measurable success across all digital platforms.
                         </p>
                         <div className="flex space-x-4">
@@ -93,18 +93,19 @@ const HeroSection = () => {
                         className="h-full w-full  relative z-[100] rounded-md"
                     />
 
-                    {/* Bottom-right gradient background */}
-                    <div
-                        className='absolute w-[30rem] lg:h-[35rem] lg:w-[35rem]  h-[30rem] bottom-[-80%] lg:right-[-30%] lg:bottom-[-60%] right-[-40%] rounded-full z-0'
-                        style={{
-                            background: 'radial-gradient(circle, rgba(36, 67, 230, 1) 2%, rgba(36, 67, 230, 0) 65%)',
-                        }}
-                    ></div>
+
                 </div>
             </div>
 
             {/* Client Carousel */}
             <section className="relative py-16 bg-[#040D43]">
+                {/* Bottom-right gradient background */}
+                <div
+                    className='absolute w-[30rem] lg:h-[35rem] lg:w-[35rem]  h-[30rem] top-[-90%] lg:right-[-5%] lg:top-[-100%] right-[-15%] rounded-full z-0'
+                    style={{
+                        background: 'radial-gradient(circle, rgba(36, 67, 230, 1) 2%, rgba(36, 67, 230, 0) 65%)',
+                    }}
+                ></div>
                 <div className="px-4 mx-auto ">
                     <h2 className="mb-8 text-3xl font-bold text-center text-white md:text-4xl">
                         Our Happy Clients

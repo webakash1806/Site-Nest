@@ -56,7 +56,7 @@ const Footer = () => {
 
                         <div className="w-full mb-8 xl:w-1/4 md:w-1/3 md:mb-0">
                             <div className="optech-footer-menu text-[#fff]">
-                                <h5 className="sora-500 text-[1.1rem]">Services</h5>
+                                <h2 className="sora-500 text-[1.1rem]">Services</h2>
                                 <div className='flex gap-1'>
                                     <div className='w-[2.5rem] h-[2.8px] bg-white mb-4 mt-2 rounded-full'></div>
                                     <div className='w-[1rem] h-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
@@ -75,7 +75,7 @@ const Footer = () => {
                         </div>
                         <div className="w-full xl:w-1/6 md:w-1/3">
                             <div className="optech-footer-menu text-[#fff]">
-                                <h5 className="sora-500 text-[1.1rem]">Information</h5>
+                                <h2 className="sora-500 text-[1.1rem]">Information</h2>
                                 <div className='flex gap-1'>
                                     <div className='w-[2.5rem] h-[2.8px] bg-white mb-4 mt-2 rounded-full'></div>
                                     <div className='w-[1rem] h-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>

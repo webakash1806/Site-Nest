@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-
+import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -53,16 +54,16 @@ const Header = () => {
 
     return (
         <>
-            <div className={`sticky top-0 z-[50] ${isScrolled ? 'pb-0 bg-transparent' : 'py-4 bg-[#040D43]'}`}>
+            <div className={`sticky top-0 z-[50] ${isScrolled ? 'pb-0 bg-transparent' : 'py-5 bg-[#040D43]'}`}>
                 <header
                     className={`transition-all overflow-x-hidden duration-300 ease-in-out ${isScrolled
-                        ? 'bg-[#02082a] backdrop-blur-md text-white w-full border-b py-5 border-gray-600 rounded-none'
+                        ? 'bg-[#02082a] backdrop-blur-lg text-white w-full border-b py-5 border-gray-600 rounded-none'
                         : 'bg-white text-black w-[96%]'
-                        } py-4 px-6 rounded-lg mx-auto`}
+                        } py-3 sm:py-4 px-6 rounded-lg mx-auto`}
                 >
                     <nav className="flex items-center justify-between">
-                        <div className="text-2xl font-bold">MyLogo</div>
-                        <ul className="hidden space-x-6 md:flex sora-500">
+                        <div className="text-xl font-bold">MyLogo</div>
+                        <ul className="hidden space-x-6 lg:flex sora-500">
                             <li>
                                 <Link
                                     to="/"
@@ -111,14 +112,26 @@ const Header = () => {
                                     Contact
                                 </Link>
                             </li>
+                            <li className='text-[1.5rem] flex items-center gap-2'>
+                                <Link to={""}>
+                                    <FaInstagramSquare />
+                                </Link>
+                                <Link to={""}>
+                                    <FaFacebookSquare />
+                                </Link>
+                                <Link to={""}>
+                                    <FaSquareXTwitter />
+                                </Link>
+                                <Link to={""}></Link>
+                            </li>
                         </ul>
-                        <div className="md:hidden">
-                            <button onClick={toggleMenu} className="focus:outline-none">
+                        <div className="lg:hidden">
+                            <button aria-label="Menu icon" onClick={toggleMenu} className="">
                                 <svg
                                     className="w-6 h-6"
                                     fill="none"
                                     stroke="currentColor"
-                                    viewBox="0 0 24 24"
+                                    viewBox="0 0 21 21"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
                                     <path
@@ -138,7 +151,7 @@ const Header = () => {
             {/* Mobile Menu */}
             <div
                 ref={menuRef}
-                className={`fixed  w-[15rem] transition-all duration-500  right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg transform ${isOpen ? 'open-menu z-[100] top-[5.5rem]' : 'close-menu z-[35] top-[3.5rem]'} md:hidden`}
+                className={`fixed  w-[15rem] transition-all duration-500  right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg transform ${isOpen ? 'open-menu z-[100] top-[5.5rem]' : 'close-menu z-[35] top-[3.5rem]'} lg:hidden`}
             >
                 <ul className="px-4 mt-8 space-y-4 sora-500">
                     <li>

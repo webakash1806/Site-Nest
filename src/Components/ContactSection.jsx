@@ -17,7 +17,7 @@ const ContactSection = () => {
                     <p className='sora-400 leading-[1.85rem] text-[#535760] mb-8'>
                         Each demo built with Teba will look different. You can customize almost anything in the appearance of your website with only a few clicks. Each demo built with Teba will look different.
                     </p>
-                    <div className="flex flex-col sm:flex-row justify-between">
+                    <div className="flex flex-col justify-between sm:flex-row">
                         {/* Address Info */}
                         <div className="flex flex-col items-start space-y-3">
                             <div className='bg-[#0A165D] p-3 rounded-md'>
@@ -25,7 +25,7 @@ const ContactSection = () => {
                             </div>
 
                             <div>
-                                <h5 className="text-[#0A165D] text-[1.3rem] sora-600">Address</h5>
+                                <h2 className="text-[#0A165D] text-[1.3rem] sora-600">Address</h2>
                                 <p className='sora-400 text-[1rem] text-[#535760] mt-2'>Naranpur, Bhojubeer<br />Varanasi, Uttar Pradesh <br /> 221003</p>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ const ContactSection = () => {
                                 <FaLocationDot className='text-[1.4rem] text-white' />
                             </div>
                             <div className='sora-400 text-[1rem] text-[#535760] space-y-1'>
-                                <h5 className="text-[#0A165D] text-[1.3rem] sora-600 mb-2">Contact</h5>
+                                <h2 className="text-[#0A165D] text-[1.3rem] sora-600 mb-2">Contact</h2>
                                 <a href="mailto:info@mthemeus.com" className="block">info@domain.com</a>
                                 <a href="tel:518-564-3200" className="block"></a>
                             </div>
@@ -50,15 +50,15 @@ const ContactSection = () => {
                 <h3 className="text-2xl text-[#0A165D] sora-600 mb-4">Fill The Contact Form</h3>
                 <p className="mb-6 sora-400 text-[#535760]">Feel free to contact with us, we don’t spam your email</p>
                 <form>
-                    <div className="flex flex-wrap -mx-2 mb-4">
-                        <div className="w-full lg:w-1/2 px-2 mb-4 lg:mb-0">
+                    <div className="flex flex-wrap mb-4 -mx-2">
+                        <div className="w-full px-2 mb-4 lg:w-1/2 lg:mb-0">
                             <input
                                 type="text"
                                 placeholder="Your name"
                                 className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
                             />
                         </div>
-                        <div className="w-full lg:w-1/2 px-2">
+                        <div className="w-full px-2 lg:w-1/2">
                             <input
                                 type="number"
                                 placeholder="Phone number"
