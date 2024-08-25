@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare } from "react-icons/fa";
+import { FaSquarePhone, FaSquarePhoneFlip, FaSquareXTwitter } from "react-icons/fa6";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -59,7 +59,7 @@ const Header = () => {
                     className={`transition-all overflow-x-hidden duration-300 ease-in-out ${isScrolled
                         ? 'bg-[#02082a] backdrop-blur-lg text-white w-full border-b py-5 border-gray-600 rounded-none'
                         : 'bg-white text-black w-[96%]'
-                        } py-3 sm:py-4 px-6 rounded-lg mx-auto`}
+                        } py-3 sm:py-4 px-4 rounded-lg mx-auto`}
                 >
                     <nav className="flex items-center justify-between">
                         <div className="text-xl font-bold">MyLogo</div>
@@ -112,17 +112,17 @@ const Header = () => {
                                     Contact
                                 </Link>
                             </li>
-                            <li className='text-[1.5rem] flex items-center gap-2'>
-                                <Link to={""}>
+                            <li className='text-[1.45rem] flex items-center gap-2'>
+                                <Link to={""} className=''>
                                     <FaInstagramSquare />
                                 </Link>
-                                <Link to={""}>
+                                <Link to={""} className=''>
                                     <FaFacebookSquare />
                                 </Link>
-                                <Link to={""}>
+                                <Link to={""} className=''>
                                     <FaSquareXTwitter />
                                 </Link>
-                                <Link to={""}></Link>
+                                <Link to={""} className=''></Link>
                             </li>
                         </ul>
                         <div className="lg:hidden">
@@ -151,7 +151,7 @@ const Header = () => {
             {/* Mobile Menu */}
             <div
                 ref={menuRef}
-                className={`fixed  w-[15rem] transition-all duration-500  right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg transform ${isOpen ? 'open-menu z-[100] top-[5.5rem]' : 'close-menu z-[35] top-[3.5rem]'} lg:hidden`}
+                className={`fixed flex flex-col justify-between w-[15rem] transition-all duration-500  right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg transform ${isOpen ? 'open-menu z-[100] top-[5.5rem]' : 'close-menu z-[35] top-[3.5rem]'} lg:hidden`}
             >
                 <ul className="px-4 mt-8 space-y-4 sora-500">
                     <li>
@@ -206,7 +206,25 @@ const Header = () => {
                             Contact
                         </Link>
                     </li>
+
                 </ul>
+                <div className='text-[1.68rem] w-fit mx-auto mb-6 flex items-center gap-3'>
+                    <Link to={""} className=''>
+                        <FaInstagramSquare />
+                    </Link>
+                    <Link to={""} className=''>
+                        <FaFacebookSquare />
+                    </Link>
+                    <Link to={""} className=''>
+                        <FaSquareXTwitter />
+                    </Link>
+                    <Link to={""} className=''>
+                        <FaWhatsappSquare />
+                    </Link>
+                    <Link to={""} className=''>
+                        <FaSquarePhone />
+                    </Link>
+                </div>
             </div>
         </>
     );

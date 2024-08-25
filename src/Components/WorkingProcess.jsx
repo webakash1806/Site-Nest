@@ -8,7 +8,7 @@ const WorkingProcess = () => {
     const phoneNumber = "916207234759"; // Replace with your phone number
     const message = "Hello! I would like to start a project.";
     return (
-        <div className="container relative px-4 py-8 mx-auto mt-10">
+        <div className="container relative px-4 py-8 mx-auto mt-10 overflow-x-hidden">
             {/* Section Title */}
             <div className="text-center flex flex-col items-center justify-center mb-12 mx-auto max-w-[28rem] sora-700">
                 <h2 className="text-3xl text-[#040D43]">Our working process on how to grow your business</h2>
@@ -26,7 +26,7 @@ const WorkingProcess = () => {
                         </div>
                         <div className='flex items-center text-center max-w-[20rem] justify-center flex-col'>
                             <span className="text-xl font-bold bg-[#2B4DFF] text-white p-[9.5px] size-12 rounded-full">01</span>
-                            <h4 className="mt-2 text-xl font-semibold">Initiation & Planning</h4>
+                            <h2 className="mt-2 text-xl font-semibold">Initiation & Planning</h2>
                             <p className="mt-2 text-gray-700 sora-400 text-[0.95rem]">We are architects innovation trailblazers of technological advancement</p>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const WorkingProcess = () => {
                         <div className='flex items-center text-center justify-center flex-col max-w-[20rem]'>
                             <span className="text-xl font-bold bg-[#2B4DFF] text-white p-[9.5px] size-12 rounded-full">02</span>
 
-                            <h4 className="mt-2 text-xl font-semibold">Execution & Development</h4>
+                            <h2 className="mt-2 text-xl font-semibold">Execution & Development</h2>
                             <p className="mt-2  text-gray-700 sora-400 text-[0.95rem]">We are architects innovation trailblazers of technological advancement</p>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ const WorkingProcess = () => {
                         <div className='flex items-center text-center max-w-[20rem] justify-center flex-col'>
                             <span className="text-xl font-bold bg-[#2B4DFF] text-white p-[9.5px] size-12 rounded-full">03</span>
 
-                            <h4 className="mt-2 text-xl font-semibold">Testing & Maintenance</h4>
+                            <h2 className="mt-2 text-xl font-semibold">Testing & Maintenance</h2>
                             <p className="mt-2 text-gray-700 sora-400 text-[0.95rem]">We are architects innovation trailblazers of technological advancement</p>
                         </div>
                     </div>

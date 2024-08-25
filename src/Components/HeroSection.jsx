@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import heroImg from '../assets/hero-thumb2.png';
+import heroImg from '../assets/hero-image.webp';
 import BlueBtn from './BlueBtn';
 import { Link } from 'react-router-dom';
 
@@ -57,7 +57,7 @@ const HeroSection = () => {
             ></div>
 
             <div className="relative justify-center z-10 sm:w-[80%] w-[99%] lg:w-[95%] px-4 mx-auto text-center  flex flex-col items-center">
-                <div className='relative lg:flex-row lg:justify-between min-h-[66vh] mb-20 z-[100] flex items-center justify-center flex-col'>
+                <div className='relative lg:flex-row lg:justify-between min-h-[66vh] mb-16 z-[100] flex items-center justify-center flex-col'>
                     <h1 className="text-white text-[1.8rem] sm:text-[2.5rem] sora-600 md:text-[3rem] lg:text-[3.8rem] lg:text-start mb-4 leading-[2.8rem] sm:leading-[3.2rem] md:leading-[4.5rem] lg:leading-[5.7rem]">
                         Your Vision,
                         <br /> Our Development,
@@ -77,7 +77,7 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className='relative w-full lg:w-[75%] h-auto lg:mt-10'>
+                <div className='relative w-full lg:w-[65%] h-auto lg:mt-8'>
                     {/* Top-left gradient background */}
                     <div
                         className='absolute w-[30rem] lg:size-[35rem] h-[30rem] top-[-65%] lg:left-[-30%] lg:top-[-50%] left-[-40%] rounded-full z-0'

@@ -12,9 +12,9 @@ const ServiceCard = ({ data }) => {
                             style={{ color: 'currentColor' }} />
 
                     </div>
-                    <a href="/single-service" tabIndex="0" className="text-[1.4rem] sora-600 leading-tight">
+                    <div tabIndex="0" className="text-[1.4rem] sora-600 leading-tight">
                         <h2 dangerouslySetInnerHTML={{ __html: data?.title }} />
-                    </a>
+                    </div>
                 </div>
             </div>
         </Link>

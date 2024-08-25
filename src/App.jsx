@@ -74,11 +74,54 @@ const App = () => {
     <>
       <HelmetProvider>
         <Helmet>
+          {/* Primary Meta Tags */}
           <title>{`${routeTitle}`}</title>
-          <meta name="author" content="Akash Kumar Singh | Ayush Mishra" />
+          <meta name="author" content="Akash Kumar Singh | webakash1806" />
           <meta name="description" content={routeDesc} />
           <meta name="keywords" content={routeKeywords} />
+
+          {/* Open Graph / Facebook Meta Tags */}
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={routeTitle} />
+          <meta property="og:description" content={routeDesc} />
+          <meta property="og:image" content={"routeImage"} />  {/* Include a representative image URL */}
+          <meta property="og:url" content={"routeUrl"} /> {/* Include the URL of the page */}
+          <meta property="og:site_name" content="Your Website Name" />
+
+          {/* Twitter Card Meta Tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content={routeTitle} />
+          <meta name="twitter:description" content={routeDesc} />
+          <meta name="twitter:image" content={"routeImage"} /> {/* Include the same image used for Open Graph */}
+          <meta name="twitter:site" content="@yourTwitterHandle" /> {/* Replace with your Twitter handle */}
+          <meta name="twitter:creator" content="@yourTwitterHandle" />
+
+          {/* Mobile Viewport Meta Tag */}
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          {/* Canonical Link */}
+          <link rel="canonical" href={"http://localhost:5173/"} />
+
+          {/* Robots Meta Tags */}
+          <meta name="robots" content="index, follow" /> {/* Ensures search engines can index and follow links */}
+
+          {/* Favicons */}
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+          <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+          <link rel="manifest" href="../public/manifest.json" />
+
+          {/* Additional Meta Tags for SEO */}
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="theme-color" content="#FFFFFF" /> {/* Defines the theme color for mobile browsers */}
+          <meta name="rating" content="General" /> {/* Indicates the content rating of your page */}
+
+          {/* Other Open Graph Tags */}
+          <meta property="og:locale" content="en_US" /> {/* Locale settings */}
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
         </Helmet>
+
       </HelmetProvider>
       <Header />
       <Suspense fallback={<div className='h-[90vh] w-full flex items-center justify-center'>Loading...</div>}>
@@ -97,7 +140,7 @@ const App = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 flex items-center justify-center right-4 z-50 p-[0.6rem] rounded-full bg-[#2A4CFF] text-white shadow-lg"
+          className="fixed bottom-4 flex items-center justify-center right-4 z-20 p-[0.6rem] rounded-full bg-[#2A4CFF] text-white shadow-lg"
           aria-label="Scroll to top"
         >
           <MdKeyboardDoubleArrowUp className='text-[1.7rem]' />
