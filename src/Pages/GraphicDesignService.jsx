@@ -7,6 +7,8 @@ import ServiceDetailCard from '../Components/ServiceDetailCard';
 import { FaPaintBrush, FaFileAlt, FaAd, FaFileImage, FaPalette, FaBusinessTime, FaPenFancy } from 'react-icons/fa';
 
 const GraphicDesignService = () => {
+    const phoneNumber = "916207234759"; // Replace with your phone number
+    const message = "Hello! I would like to start a graphic design project."; // 
 
     const services = [
         { icon: FaPaintBrush, title: 'Logo Design', description: 'Craft unique and memorable logos to establish your brand identity.' },
@@ -28,8 +30,8 @@ const GraphicDesignService = () => {
         <div>
             <BreadCrumbs headText={"Graphic Design Services"} items={breadcrumbItems} />
             <section id="about" className="py-10 bg-white lg:mx-20">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-col lg:flex-row lg:items-center justify-center">
+                <div className="container px-4 mx-auto">
+                    <div className="flex flex-col justify-center lg:flex-row lg:items-center">
                         {/* Image Section */}
                         <div className="lg:w-[43%] mb-6 lg:mb-0">
                             <img
@@ -44,25 +46,25 @@ const GraphicDesignService = () => {
                             <h3 className="text-[1.8rem] sora-700 text-[#040D43] mb-4">
                                 Why Is Graphic Design Important?
                             </h3>
-                            <ul className="list-none mb-6 sora-500">
+                            <ul className="mb-6 list-none sora-500">
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Enhances Visual Communication.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Builds Brand Identity.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Increases Engagement and Conversions.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Creates a Professional Image.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Improves User Experience.</span>
                                 </li>
                             </ul>
@@ -73,9 +75,9 @@ const GraphicDesignService = () => {
                     </div>
                 </div>
             </section>
-            <CTAsection text={"Looking to enhance your brand's visual impact with professional graphic design? Contact us today to create captivating designs that elevate your brand and attract more customers!"} msg={""} />
+            <CTAsection text={"Looking to enhance your brand's visual impact with professional graphic design? Contact us today to create captivating designs that elevate your brand and attract more customers!"} msg={"Contact us"} to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} />
             <h1 className='mt-16 mx-auto w-fit sora-700 text-[2.5rem] text-[#040D43]'>What we do?</h1>
-            <div className='grid mt-6 grid-cols-1 sm:grid-cols-2 w-fit mx-auto container  md:grid-cols-3 gap-6'>
+            <div className='container grid grid-cols-1 gap-6 mx-auto mt-6 sm:grid-cols-2 w-fit md:grid-cols-3'>
                 {services.map((service, index) => (
                     <ServiceDetailCard
                         key={index}

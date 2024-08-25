@@ -12,12 +12,16 @@ const EcommerceService = () => {
         { label: 'E-Commerce Development Services' },
     ];
 
+    const phoneNumber = "916207234759"; // Replace with your phone number
+    const message = "Hello! I would like to inquire about your Website Design and Development services."; // Replace with your default message
+
+
     return (
         <div>
             <BreadCrumbs headText={"E-Commerce Development"} items={breadcrumbItems} />
             <section id="about" className="py-10 bg-white lg:mx-20">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-col lg:flex-row lg:items-center justify-center">
+                <div className="container px-4 mx-auto">
+                    <div className="flex flex-col justify-center lg:flex-row lg:items-center">
                         {/* Image Section */}
                         <div className="lg:w-[43%] mb-6 lg:mb-0">
                             <img
@@ -32,25 +36,25 @@ const EcommerceService = () => {
                             <h3 className="text-[1.8rem] sora-700 text-[#040D43] mb-4">
                                 Why Is an E-Commerce Website Important?
                             </h3>
-                            <ul className="list-none mb-6 sora-500">
+                            <ul className="mb-6 list-none sora-500">
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Expanded Customer Reach.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>24/7 Availability for Sales.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Convenient Shopping Experience.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Personalized Customer Interactions.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Cost-Effective Marketing and Promotions.</span>
                                 </li>
                             </ul>
@@ -61,7 +65,7 @@ const EcommerceService = () => {
                     </div>
                 </div>
             </section>
-            <CTAsection text={"Looking to expand your business online with an e-commerce store? Contact us today to build a user-friendly, revenue-generating e-commerce website tailored to your needs!"} msg={""} />
+            <CTAsection text={"Looking to expand your business online with an e-commerce store? Contact us today to build a user-friendly, revenue-generating e-commerce website tailored to your needs!"} msg={"Contact Us"} to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} />
             <WebsiteDevelopmentCard />
         </div>
     );

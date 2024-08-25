@@ -117,7 +117,6 @@ const HeroSection = () => {
                         className="mySwiper"
                         allowTouchMove={false}
                         speed={3500}
-
                     >
                         {clientImages.concat(clientImages).map((img, index) => (
                             <SwiperSlide key={index} className="flex justify-center">

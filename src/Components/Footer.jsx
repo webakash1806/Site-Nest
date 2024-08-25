@@ -4,28 +4,31 @@ import { Link } from 'react-router-dom';
 import { MdCall, MdMail } from 'react-icons/md';
 
 const Footer = () => {
+    const phoneNumber = "916207234759"; // Replace with your phone number
+    const message = "Hello! I would like to start a project."; // Replace with your default message
+
     return (
-        <footer className="relative overflow-x-hidden pt-16 flex items-center justify-center">
+        <footer className="relative flex items-center justify-center pt-16 overflow-x-hidden">
             <div className=" absolute top-[3rem] sm:top-[8rem]">
                 <div
                     className="bg-cover  bg-no-repeat py-10 pt-16 md:py-20 md:mx-10 mx-4 rounded-[1.4rem] sm:px-20 px-10 h-fit w-fit"
                     style={{ backgroundImage: `url(${ctaImage})` }}
                 >
-                    <div className="flex flex-wrap items-end  gap-4">
+                    <div className="flex flex-wrap items-end gap-4">
                         <div className="text-white max-w-[35rem]">
                             <h2 className="text-4xl md:text-[2.7rem] font-semibold mb-4 sora-500 md:sora-600">Let’s work together</h2>
                             <p className=" sora-400 leading-7 text-[#f1f3fa]">Each demo built with Teba will look different. You can customize anything appearance of your website with only Link few clicks.</p>
                         </div>
-                        <button className='bg-white sora-500 p-3 px-4 rounded'>
+                        <Link target='_blank' to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} className='p-3 px-4 bg-white rounded sora-500'>
                             Start a project
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
             <div className=" mx-auto w-full sm:px-28 px-4 mt-[12rem] pt-[13rem] bg-[#040D43]">
-                <div className=" py-8">
+                <div className="py-8 ">
                     <div className="flex flex-wrap">
-                        <div className="w-full lg:w-1/3 md:w-full mb-8 xl:mb-0">
+                        <div className="w-full mb-8 lg:w-1/3 md:w-full xl:mb-0">
                             <div className="optech-footer-textarea text-[#fff]">
                                 <Link to="/">
                                     <img src={""} alt="Logo" className="mb-4" />
@@ -36,13 +39,13 @@ const Footer = () => {
                                 <div className="">
                                     <ul>
                                         <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white">
-                                            <Link to="tel:123" className="flex gap-2 items-center">
+                                            <Link to="tel:123" className="flex items-center gap-2">
                                                 <MdCall className='text-[1.3rem]' /> +91 6207234759
                                             </Link>
                                         </li>
                                         <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white">
 
-                                            <Link to="mailto:name@email.com" className="flex gap-2 items-center">
+                                            <Link to="mailto:name@email.com" className="flex items-center gap-2">
                                                 <MdMail className='text-[1.3rem]' />mthemeus@example.com
                                             </Link>
                                         </li>
@@ -50,7 +53,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full xl:w-1/6 md:w-1/3 mb-8 md:mb-0">
+                        <div className="w-full mb-8 xl:w-1/6 md:w-1/3 md:mb-0">
                             <div className=" text-[#fff]">
                                 <h5 className="sora-500 text-[1.1rem]  ">Quick Links</h5>
                                 <div className='flex gap-1'>
@@ -68,7 +71,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="w-full xl:w-1/4 md:w-1/3 mb-8 md:mb-0">
+                        <div className="w-full mb-8 xl:w-1/4 md:w-1/3 md:mb-0">
                             <div className="optech-footer-menu text-[#fff]">
                                 <h5 className="sora-500 text-[1.1rem]">Services</h5>
                                 <div className='flex gap-1'>
