@@ -99,7 +99,7 @@ const App = () => {
           <meta property="og:description" content={routeDesc} />
           <meta property="og:image" content={"routeImage"} />  {/* Include a representative image URL */}
           <meta property="og:url" content={"routeUrl"} /> {/* Include the URL of the page */}
-          <meta property="og:site_name" content="Your Website Name" />
+          <meta property="og:site_name" content="Binary Wise Tech" />
 
           {/* Twitter Card Meta Tags */}
           <meta name="twitter:card" content="summary_large_image" />

@@ -85,8 +85,8 @@ const Footer = () => {
 
                                 </div>
                                 <ul>
-                                    <li className=" sora-300 leading-8 text-[0.9rem] hover:text-white text-[#e0e4ff]"><Link to="/">About us</Link></li>
-                                    <li className=" sora-300 leading-8 text-[0.9rem] hover:text-white text-[#e0e4ff]"><Link to="/">Contact us</Link></li>
+                                    <li className=" sora-300 leading-8 text-[0.9rem] hover:text-white text-[#e0e4ff]"><Link to="/about">About us</Link></li>
+                                    <li className=" sora-300 leading-8 text-[0.9rem] hover:text-white text-[#e0e4ff]"><Link to="/contact">Contact us</Link></li>
 
                                     <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Privacy Policy</Link></li>
                                     <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Terms &amp; Conditions</Link></li>

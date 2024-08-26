@@ -130,7 +130,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className='text-[1.45rem] flex items-center gap-2'>
-                                <Link to={""} className=''>
+                                <Link to={"https://www.instagram.com/binarywisetech/?hl=en"} target='_blank' className=''>
                                     <FaInstagramSquare />
                                 </Link>
                                 <Link to={""} className=''>
@@ -193,6 +193,7 @@ const Header = () => {
                         <Link
                             to="/services/web-services"
                             className={`border-b-2 transition-all duration-300 ${isActive('/services/web-services') ? 'text-[#2B4DFF] border-[#2B4DFF]' : 'border-transparent hover:text-[#2B4DFF] hover:border-[#2B4DFF]'}`}
+                            onClick={() => setIsOpen(false)}
                         >
                             Web Development
                         </Link>
@@ -201,6 +202,7 @@ const Header = () => {
                         <Link
                             to="/services/graphic-services"
                             className={`border-b-2 transition-all duration-300 ${isActive('/services/graphic-services') ? 'text-[#2B4DFF] border-[#2B4DFF]' : 'border-transparent hover:text-[#2B4DFF] hover:border-[#2B4DFF]'}`}
+                            onClick={() => setIsOpen(false)}
                         >
                             Graphic Design
                         </Link>
@@ -226,7 +228,7 @@ const Header = () => {
 
                 </ul>
                 <div className='text-[1.68rem] w-fit mx-auto mb-6 flex items-center gap-3'>
-                    <Link to={""} className=''>
+                    <Link to={"https://www.instagram.com/binarywisetech/?hl=en"} target='_blank' className=''>
                         <FaInstagramSquare />
                     </Link>
                     <Link to={""} className=''>
@@ -235,10 +237,10 @@ const Header = () => {
                     <Link to={""} className=''>
                         <FaSquareXTwitter />
                     </Link>
-                    <Link to={""} className=''>
+                    <Link to={"https://wa.me/916207234759"} target='_blank' className=''>
                         <FaWhatsappSquare />
                     </Link>
-                    <Link to={""} className=''>
+                    <Link to={"tel:+916207234759"} className=''>
                         <FaSquarePhone />
                     </Link>
                 </div>
