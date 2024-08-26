@@ -88,7 +88,7 @@ const App = () => {
       <HelmetProvider>
         <Helmet>
           {/* Primary Meta Tags */}
-          <title>{`${routeTitle}`}</title>
+          <title>{`Binary Wise Tech | ${routeTitle}`}</title>
           <meta name="author" content="Akash Kumar Singh | webakash1806" />
           <meta name="description" content={routeDesc} />
           <meta name="keywords" content={routeKeywords} />
