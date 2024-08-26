@@ -54,7 +54,7 @@ const Home = () => {
                 </div>
             </div>
             <WebsiteDevelopmentCard />
-            <AboutSection />
+            <AboutSection btn={true} />
             <WorkingProcess />
             <DetailSection />
             <div className='flex flex-col items-center justify-center mt-20 mb-10 lg:mt-28'>

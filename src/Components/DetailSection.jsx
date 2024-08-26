@@ -1,6 +1,6 @@
 import React from 'react';
-import about1 from '../assets/about1.png';
-import about2 from '../assets/about2.png';
+import detail1 from '../assets/detail1.avif';
+import detail2 from '../assets/detail2.avif';
 import shape1 from '../assets/shape1.svg';
 import shape2 from '../assets/shape2.svg';
 import icon1 from '../assets/icon5.svg';
@@ -9,10 +9,10 @@ import icon3 from '../assets/icon6.svg';
 
 const DetailSection = () => {
     return (
-        <div className='flex bg-[#F5F6F7] flex-col px-[5vw] gap-8 md:flex-row-reverse md:justify-around items-center py-28 my-20 lg:pb-40'>
-            <div className='max-w-[28rem] w-full aspect-w-4 aspect-h-3 relative sm:mb-36 md:mb-0 sm:ml-16 md:ml-0 lg:ml-20'>
-                <img src={about1} className='w-full h-full relative z-[10]' alt="Main visual" />
-                <img src={about2} alt="Supplementary image" className='w-[60%] h-auto hidden lg:block absolute bottom-[-100px] left-[-100px]' />
+        <div className='flex bg-[#F5F6F7] flex-col px-[5vw] gap-8 lg:flex-row-reverse lg:justify-around items-center py-28 my-20 lg:pb-40'>
+            <div className='max-w-[28rem] w-full aspect-w-4 aspect-h-3 relative sm:mb-10 md:mb-0 sm:ml-16 md:ml-0 lg:ml-20'>
+                <img src={detail1} className='w-full h-full drop-shadow-[0px_0px_8px] relative z-[10]' alt="Main visual" />
+                <img src={detail2} alt="Supplementary image" className='w-[60%] z-[20] h-auto hidden lg:block absolute drop-shadow-[0px_0px_5px] bottom-[-100px] left-[-100px]' />
                 <img src={shape1} alt="Decorative shape 1" className='w-[28%] h-auto hidden lg:block absolute top-[85px] left-[-80px]' />
                 <img src={shape2} alt="Decorative shape 2" className='w-[26%] h-auto hidden lg:block absolute bottom-[-92px] right-[140px]' />
             </div>

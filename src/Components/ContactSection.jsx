@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLocationDot } from "react-icons/fa6";
-import BlueBtn from './BlueBtn';
+import { MdContactPhone } from "react-icons/md";
 
 const ContactSection = () => {
     return (
@@ -32,7 +32,7 @@ const ContactSection = () => {
                         {/* Contact Info */}
                         <div className="flex flex-col items-start space-y-3">
                             <div className='bg-[#0A165D] p-3 rounded-md'>
-                                <FaLocationDot className='text-[1.4rem] text-white' />
+                                <MdContactPhone className='text-[1.4rem] text-white' />
                             </div>
                             <div className='sora-400 text-[1rem] text-[#535760] space-y-1'>
                                 <h2 className="text-[#0A165D] text-[1.3rem] sora-600 mb-2">Contact</h2>
@@ -49,37 +49,39 @@ const ContactSection = () => {
             {/* Right Column */}
             <div className="max-w-[34rem] sm:p-12 p-6 bg-white shadow-sm rounded-xl  md:max-w-[31rem] mt-10 lg:mt-0" data-aos="fade-up" data-aos-duration="600">
                 <h3 className="text-2xl text-[#0A165D] sora-600 mb-4">Fill The Contact Form</h3>
-                <p className="mb-6 sora-400 text-[#535760]">Feel free to contact with us, we don’t spam your email</p>
+                <p className="mb-6 sora-400 text-[#535760]">Feel free to contact with us, guaranteed response within 24 hours</p>
                 <form>
+                    <div className="mb-4">
+                        <input
+                            type="text"
+                            placeholder="Your name"
+                            className="w-full p-2 border rounded focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
+                        />
+                    </div>
                     <div className="flex flex-wrap mb-4 -mx-2">
-                        <div className="w-full px-2 mb-4 lg:w-1/2 lg:mb-0">
+                        <div className="w-full px-2 mb-4 lg:w-[60%] lg:mb-0">
                             <input
-                                type="text"
-                                placeholder="Your name"
-                                className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
+                                type="email"
+                                placeholder="Email address"
+                                className="w-full p-2 border rounded focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
+
                             />
+
                         </div>
-                        <div className="w-full px-2 lg:w-1/2">
+                        <div className="w-full px-2 lg:w-[40%]">
                             <input
                                 type="number"
                                 placeholder="Phone number"
-                                className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
+                                className="w-full p-2 border rounded focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
                             />
                         </div>
                     </div>
-                    <div className="mb-4">
-                        <input
-                            type="email"
-                            placeholder="Email address"
-                            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
 
-                        />
-                    </div>
                     <div className="mb-4">
                         <textarea
                             name="textarea"
                             placeholder="Write your message"
-                            className="w-full px-4 py-2 border rounded resize-none focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
+                            className="w-full p-2 border rounded resize-none focus:outline-none focus:ring-1 focus:ring-[#0f29bd]"
                             rows="5"
                         ></textarea>
                     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import ctaImage from '../assets/footer.png';
 import { Link } from 'react-router-dom';
 import { MdCall, MdMail } from 'react-icons/md';
-
+import { FaRegCopyright } from "react-icons/fa";
 const Footer = () => {
     const phoneNumber = "916207234759"; // Replace with your phone number
     const message = "Hello! I would like to start a project."; // Replace with your default message
@@ -11,16 +11,18 @@ const Footer = () => {
         <footer className="relative flex items-center justify-center pt-16 overflow-x-hidden">
             <div className=" absolute top-[3rem] sm:top-[8rem]">
                 <div
-                    className="bg-cover  bg-no-repeat py-10 pt-16 md:py-20 md:mx-10 mx-4 rounded-[1.4rem] sm:px-20 px-10 h-fit w-fit"
+                    className="bg-cover  bg-no-repeat py-10 pt-16 md:py-10 lg:py-20 md:mx-10 mx-4 rounded-[1.4rem] sm:px-20 px-10 h-fit w-fit"
                     style={{ backgroundImage: `url(${ctaImage})` }}
                 >
                     <div className="flex flex-wrap items-end gap-4">
                         <div className="text-white max-w-[35rem]">
-                            <h2 className="text-4xl md:text-[2.7rem] font-semibold mb-4 sora-500 md:sora-600">Let’s work together</h2>
-                            <p className=" sora-400 leading-7 text-[#f1f3fa]">Each demo built with Teba will look different. You can customize anything appearance of your website with only Link few clicks.</p>
+                            <h2 className="text-[2rem] md:text-[2.7rem] font-semibold mb-4 sora-500 md:sora-600">Have Any Query?</h2>
+                            <p className="sora-400 leading-7 text-[#f1f3fa]">
+                                Transform your vision with our expert IT services. Reach out to us for tailored solutions and let’s achieve success together.
+                            </p>
                         </div>
                         <Link target='_blank' to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} className='p-3 px-4 bg-white rounded sora-500'>
-                            Start a project
+                            Contact us
                         </Link>
                     </div>
                 </div>
@@ -34,7 +36,7 @@ const Footer = () => {
                                     <img src={""} alt="Logo" className="mb-4" />
                                 </Link>
                                 <p className="text-[#e0e4ff] mb-4 sora-300 leading-8 text-[0.9rem] hover:text-white pr-10">
-                                    Transform your vision into reality with our expert IT services. From innovative development to tailored solutions, we engineer every project for success, ensuring your goals are achieved with precision and excellence.
+                                    Transform your vision with our expert IT services, delivering innovative solutions to achieve your goals with precision and excellence.
                                 </p>
                                 <div className="">
                                     <ul>
@@ -94,8 +96,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="sora-400 text-[1rem] text-center py-4 text-[#fff]">
-                    <p> Copyright © 2024 Site Nest. All rights reserved.</p>
+                <div className="sora-400 flex items-center justify-center gap-1 text-[1rem] py-4 text-[#fff]">
+                    <FaRegCopyright className='text-[1.2rem] mb-[2.5px]' />
+                    <p> 2024 Binary Wise Tech. All rights reserved.</p>
                 </div>
             </div>
         </footer>
