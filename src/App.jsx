@@ -10,6 +10,7 @@ import routeTitles from './Hooks/routeTitles';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import seoMetaDescriptions from './Hooks/seoMetaDescriptions';
 import seoKeywords from './Hooks/seoKeywords';
+
 // Lazy load components
 const Home = React.lazy(() => import('./Pages/Home'));
 const ContactPage = React.lazy(() => import('./Pages/ContactPage'));
@@ -21,18 +22,32 @@ const DigitalMarketingService = React.lazy(() => import('./Pages/DigitalMarketin
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const location = useLocation()
+  const location = useLocation();
+
+  // Debounce function
+  const debounce = (func, wait) => {
+    let timeout;
+    return (...args) => {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  };
+
   // Handle scroll to show/hide button
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    const handleScroll = () => {
-      if (window.scrollY > 50) { // Show button after scrolling down 300px
+    const handleScroll = debounce(() => {
+      if (window.scrollY > 50) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
-    };
+    }, 100); // Adjust the delay time as needed
 
     window.addEventListener('scroll', handleScroll);
 
@@ -46,29 +61,27 @@ const App = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-
   const getMetaData = (currentPath) => {
     const matchedRoute = routeTitles.find(route => matchPath(route.path, currentPath));
     return matchedRoute ? matchedRoute.title : 'Page';
   };
 
   const currentPath = location.pathname;
-  const routeTitle = getMetaData(currentPath)
+  const routeTitle = getMetaData(currentPath);
 
   const getDescription = (currentPath) => {
     const matchedRoute = seoMetaDescriptions.find(route => matchPath(route.path, currentPath));
     return matchedRoute ? matchedRoute.description : 'Page';
   };
 
-  const routeDesc = getDescription(currentPath)
+  const routeDesc = getDescription(currentPath);
 
   const getKeywords = (currentPath) => {
     const matchedRoute = seoKeywords.find(route => matchPath(route.path, currentPath));
     return matchedRoute ? matchedRoute.description : 'Page';
   };
 
-  const routeKeywords = getKeywords(currentPath)
-
+  const routeKeywords = getKeywords(currentPath);
 
   return (
     <>
@@ -121,7 +134,6 @@ const App = () => {
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
         </Helmet>
-
       </HelmetProvider>
       <Header />
       <Suspense fallback={<div className='h-[90vh] w-full flex items-center justify-center'>Loading...</div>}>

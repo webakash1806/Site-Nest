@@ -2,11 +2,25 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare } from "react-icons/fa";
 import { FaSquarePhone, FaSquarePhoneFlip, FaSquareXTwitter } from "react-icons/fa6";
+
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const menuRef = useRef();
     const location = useLocation();
+
+    // Debounce function
+    const debounce = (func, delay) => {
+        let timeout;
+        return function (...args) {
+            if (timeout) {
+                clearTimeout(timeout);
+            }
+            timeout = setTimeout(() => {
+                func.apply(this, args);
+            }, delay);
+        };
+    };
 
     const toggleMenu = (event) => {
         event.stopPropagation(); // Prevent click event from bubbling up to the window
@@ -32,7 +46,7 @@ const Header = () => {
         };
     }, [isOpen]);
 
-    // Handle scroll for sticky header effect
+    // Handle scroll for sticky header effect with debounce
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
@@ -42,10 +56,13 @@ const Header = () => {
             }
         };
 
-        window.addEventListener('scroll', handleScroll);
+        // Debounced handleScroll function
+        const debouncedHandleScroll = debounce(handleScroll, 100);
+
+        window.addEventListener('scroll', debouncedHandleScroll);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', debouncedHandleScroll);
         };
     }, []);
 
@@ -57,9 +74,9 @@ const Header = () => {
             <div className={`sticky top-0 z-[50] ${isScrolled ? 'pb-0 bg-transparent' : 'py-5 bg-[#040D43]'}`}>
                 <header
                     className={`transition-all overflow-x-hidden duration-300 ease-in-out ${isScrolled
-                        ? 'bg-[#02082a] backdrop-blur-lg text-white w-full border-b py-5 border-gray-600 rounded-none'
-                        : 'bg-white text-black w-[96%]'
-                        } py-3 sm:py-4 px-4 rounded-lg mx-auto`}
+                        ? 'bg-[#02082a] backdrop-blur-lg text-white w-full border-b py-3 sm:py-4 md:py-6 border-gray-600 rounded-none'
+                        : 'bg-white py-4 md:py-5 text-black w-[96%]'
+                        }  px-4 rounded-lg mx-auto`}
                 >
                     <nav className="flex items-center justify-between">
                         <div className="text-xl font-bold">MyLogo</div>

@@ -58,7 +58,7 @@ const Footer = () => {
                             <div className="optech-footer-menu text-[#fff]">
                                 <h2 className="sora-500 text-[1.1rem]">Services</h2>
                                 <div className='flex gap-1'>
-                                    <div className='w-[2.5rem] h-[2.8px] bg-white mb-4 mt-2 rounded-full'></div>
+                                    <div className='w-[2.5rem] h-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
                                     <div className='w-[1rem] h-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
                                     <div className='size-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
 
@@ -75,15 +75,17 @@ const Footer = () => {
                         </div>
                         <div className="w-full xl:w-1/6 md:w-1/3">
                             <div className="optech-footer-menu text-[#fff]">
-                                <h2 className="sora-500 text-[1.1rem]">Information</h2>
+                                <h2 className="sora-500 text-[1.1rem]">Quick Links</h2>
                                 <div className='flex gap-1'>
-                                    <div className='w-[2.5rem] h-[2.8px] bg-white mb-4 mt-2 rounded-full'></div>
+                                    <div className='w-[2.5rem] h-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
                                     <div className='w-[1rem] h-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
                                     <div className='size-[3.5px] bg-white mb-4 mt-2 rounded-full'></div>
 
                                 </div>
                                 <ul>
-                                    <li className=" sora-300 leading-8 text-[0.9rem] hover:text-white text-[#e0e4ff]"><Link to="/">Working Process</Link></li>
+                                    <li className=" sora-300 leading-8 text-[0.9rem] hover:text-white text-[#e0e4ff]"><Link to="/">About us</Link></li>
+                                    <li className=" sora-300 leading-8 text-[0.9rem] hover:text-white text-[#e0e4ff]"><Link to="/">Contact us</Link></li>
+
                                     <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Privacy Policy</Link></li>
                                     <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Terms &amp; Conditions</Link></li>
                                     <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Faqs</Link></li>
