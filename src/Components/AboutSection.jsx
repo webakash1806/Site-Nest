@@ -23,8 +23,8 @@ const AboutSection = () => {
                 <img src={shape2} alt="Shape 2" className='w-[26%] hidden md:hidden lg:block sm:block absolute bottom-[-92px] left-[140px]' />
             </div>
             <div className='max-w-[33rem] md:max-w-[30rem] md:mt-2'>
-                <h1 className='sora-600 leading-[3rem] mb-4 text-[2.5rem] text-[#0A165D]'>Exclusive technology to provide IT solutions</h1>
-                <p className='sora-400 leading-[1.85rem] text-[#535760]'>Leveraging exclusive technology to deliver cutting-edge IT solutions that streamline operations, enhance productivity, and drive digital transformation for businesses across diverse industries and sectors.</p>
+                <h1 className='sora-600 leading-[3rem] mb-4 text-[2.5rem] text-[#0A165D]'>Innovative Solutions for Your IT Needs.</h1>
+                <p className='sora-400 leading-[1.85rem] text-[#535760]'>We offer a full range of IT services, from web development and graphic design to digital marketing, delivering innovative, customized solutions that drive business growth and help you achieve your goals effectively.</p>
                 <div className='flex my-12' ref={counterRef}>
                     <div className='w-[50%]'>
                         <p className='sora-600 text-[3.2rem] leading-[3rem] tracking-wide text-[#0A165D]'>

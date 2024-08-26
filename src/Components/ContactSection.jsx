@@ -10,12 +10,12 @@ const ContactSection = () => {
             {/* Left Column */}
             <div className="max-w-[34rem] px-2 md:max-w-[35rem] flex items-center">
                 <div className="mr-10">
-                    <h1 className='sora-600 leading-[3rem] mb-4 text-[2.5rem] text-[#0A165D]'>                                Let’s build an awesome project together
+                    <h1 className='sora-600 leading-[3rem] mb-4 text-[2.5rem] text-[#0A165D]'>                                  Partner with Us for Comprehensive IT Services
                     </h1>
 
 
                     <p className='sora-400 leading-[1.85rem] text-[#535760] mb-8'>
-                        Each demo built with Teba will look different. You can customize almost anything in the appearance of your website with only a few clicks. Each demo built with Teba will look different.
+                        We provide comprehensive IT services, including web development, graphic design, and digital marketing, to help businesses grow and achieve their goals. Let's collaborate to elevate your business.
                     </p>
                     <div className="flex flex-col justify-between sm:flex-row">
                         {/* Address Info */}
