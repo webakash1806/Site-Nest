@@ -122,7 +122,7 @@ const App = () => {
           <link rel="icon" href="/favicon.ico" sizes="any" />
           <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-          <link rel="manifest" href="../public/manifest.json" />
+          <link rel="manifest" href="/manifest.json" />
 
           {/* Additional Meta Tags for SEO */}
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -136,7 +136,25 @@ const App = () => {
         </Helmet>
       </HelmetProvider>
       <Header />
-      <Suspense fallback={<div className='h-[90vh] w-full flex items-center justify-center'>Loading...</div>}>
+      <Suspense fallback={<div className='h-[90vh] w-full flex items-center justify-center'>
+        <div className="loader">
+          <svg viewBox="0 0 80 80">
+            <circle r="32" cy="40" cx="40" id="test"></circle>
+          </svg>
+        </div>
+
+        <div className="loader triangle">
+          <svg viewBox="0 0 86 80">
+            <polygon points="43 8 79 72 7 72"></polygon>
+          </svg>
+        </div>
+
+        <div className="loader">
+          <svg viewBox="0 0 80 80">
+            <rect height="64" width="64" y="8" x="8"></rect>
+          </svg>
+        </div>
+      </div>}>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<ContactPage />} />
