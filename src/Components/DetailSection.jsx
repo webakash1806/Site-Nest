@@ -11,8 +11,8 @@ const DetailSection = () => {
     return (
         <div className='flex bg-[#F5F6F7] flex-col px-[5vw] gap-8 lg:flex-row-reverse lg:justify-around items-center py-28 my-20 lg:pb-40'>
             <div className='max-w-[28rem] w-full aspect-w-4 aspect-h-3 relative sm:mb-10 md:mb-0 sm:ml-16 md:ml-0 lg:ml-20'>
-                <img src={detail1} className='w-full h-full drop-shadow-[0px_0px_8px] relative z-[10]' alt="Main visual" />
-                <img src={detail2} alt="Supplementary image" className='w-[60%] z-[20] h-auto hidden lg:block absolute drop-shadow-[0px_0px_5px] bottom-[-100px] left-[-100px]' />
+                <img src={detail1} className='w-full h-full drop-shadow-[-3px_4px_4px_#808080] relative z-[10]' alt="Main visual" />
+                <img src={detail2} alt="Supplementary image" className='w-[60%] z-[20] h-auto hidden lg:block absolute drop-shadow-[0px_5px_5px_#808080] bottom-[-100px] left-[-100px]' />
                 <img src={shape1} alt="Decorative shape 1" className='w-[28%] h-auto hidden lg:block absolute top-[85px] left-[-80px]' />
                 <img src={shape2} alt="Decorative shape 2" className='w-[26%] h-auto hidden lg:block absolute bottom-[-92px] right-[140px]' />
             </div>

@@ -16,9 +16,9 @@ const AboutSection = ({ btn }) => {
 
     return (
         <div className='flex bg-[#F5F6F7] flex-col px-[5vw] gap-8 lg:flex-row lg:justify-around items-center justify-center py-28 lg:pb-40'>
-            <div className='max-w-[28rem] w-full aspect-w-4 aspect-h-3 relative sm:mb-36 md:mb-0 sm:mr-16 md:mr-0 lg:mr-20'>
-                <img src={about1} className='w-full h-full drop-shadow-[0px_0px_8px] relative z-[10]' alt="Main visual" />
-                <img src={about2} alt="Supplementary image" className='w-[60%] z-[20] h-auto hidden lg:block absolute drop-shadow-[0px_0px_5px] bottom-[-100px] right-[-100px]' />
+            <div className='max-w-[28rem] w-full aspect-w-4 aspect-h-3 relative sm:mb-5 md:mb-0 sm:mr-16 md:mr-0 lg:mr-20'>
+                <img src={about1} className='w-full h-full drop-shadow-[-3px_4px_4px_#808080] relative z-[10]' alt="Main visual" />
+                <img src={about2} alt="Supplementary image" className='w-[60%] z-[20] h-auto hidden lg:block absolute drop-shadow-[0px_5px_6px_#808080] bottom-[-100px] right-[-100px]' />
                 <img src={shape1} alt="Decorative shape 1" className='w-[28%] h-auto hidden lg:block absolute top-[85px] right-[-80px]' />
                 <img src={shape2} alt="Decorative shape 2" className='w-[26%] h-auto hidden lg:block absolute bottom-[-92px] right-[140px]' />   </div>
             <div className='max-w-[33rem] md:max-w-[30rem] md:mt-2'>
