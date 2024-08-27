@@ -28,7 +28,7 @@ const HeroSection = () => {
     ];
 
     return (
-        <section className="relative bg-[#040D43] py-16 overflow-hidden">
+        <section className="relative bg-[#040D43] py-8 overflow-hidden">
             {/* Background Dot Pattern */}
             <div
                 className="absolute inset-0 z-10"
@@ -95,7 +95,7 @@ const HeroSection = () => {
                         background: 'radial-gradient(circle, rgba(36, 67, 230, 1) 2%, rgba(36, 67, 230, 0) 65%)',
                     }}
                 ></div>
-                <div className="px-4 mx-auto ">
+                <div className="px-4 relative mx-auto z-[10]">
                     <h2 className="mb-8 text-3xl font-bold text-center text-white md:text-4xl">
                         Our Happy Clients
                     </h2>

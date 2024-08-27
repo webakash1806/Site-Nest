@@ -6,7 +6,7 @@ const CTAsection = ({ text, msg, to }) => {
   return (
     <div className="container mx-auto mt-10 w-fit">
       <div
-        className="bg-cover bg-no-repeat py-10 pt-10 md:py-16 md:mx-10 mx-4 rounded-[1.4rem] sm:px-20 px-10 h-auto w-fit"
+        className="bg-cover bg-no-repeat py-10 pt-20 md:py-16 md:mx-10 mx-4 rounded-[1.4rem] sm:px-20 px-10 h-auto w-fit"
         style={{ backgroundImage: `url(${CTAbg})` }}
       >
         <div className="flex flex-wrap items-start gap-6">

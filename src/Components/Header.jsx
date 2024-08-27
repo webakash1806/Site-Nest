@@ -168,7 +168,7 @@ const Header = () => {
             {/* Mobile Menu */}
             <div
                 ref={menuRef}
-                className={`fixed flex flex-col justify-between w-[15rem] transition-all duration-500  right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg transform ${isOpen ? 'open-menu z-[100] top-[5.5rem]' : 'close-menu z-[35] top-[3.5rem]'} lg:hidden`}
+                className={`fixed flex flex-col justify-between w-[15rem] transition-all duration-500 right-2  sm:right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg transform ${isOpen ? 'open-menu z-[100] top-[3.8rem] sm:top-[5.7rem]' : 'close-menu top-[4rem] sm:top-[4.8rem] z-[35]  border-0'} lg:hidden`}
             >
                 <ul className="px-4 mt-8 space-y-4 sora-500">
                     <li>

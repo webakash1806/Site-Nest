@@ -47,7 +47,7 @@ const Home = () => {
     return (
         <div className=''>
             <HeroSection />
-            <div className='flex flex-col items-center justify-center mt-20 mb-10 lg:mt-28'>
+            <div className='flex flex-col items-center justify-center mt-12 mb-10 lg:mt-24'>
                 <h1 className='sora-700 leading-[3rem] text-center mb-4 text-[2.2rem] md:text-[3rem] md:leading-[3.3rem] max-w-[25rem] sm:max-w-full text-[#0A165D]'>Our <br className='md:hidden' /> awesome services to <br className='hidden sm:block' /> give you success</h1>
                 <div className='grid gap-8 mt-4 grid-1 sm:grid-cols-2 lg:grid-cols-4'>
                     {data?.map((dat, ind) => <ServiceCard key={ind} data={dat} />)}
@@ -57,7 +57,7 @@ const Home = () => {
             <AboutSection btn={true} />
             <WorkingProcess />
             <DetailSection />
-            <div className='flex flex-col items-center justify-center mt-20 mb-10 lg:mt-28'>
+            <div className='flex flex-col items-center justify-center mt-20 mb-10 sm:px-10 lg:mt-28'>
                 <h1 className='sora-700 leading-[3rem] text-center mb-4 text-[2.2rem] md:text-[3rem] md:leading-[3.3rem] max-w-[25rem] sm:max-w-full text-[#0A165D]'>Our <br className='md:hidden' /> Latest Projects </h1>
                 <div className='grid gap-8 mt-4 grid-1 sm:grid-cols-2 lg:grid-cols-4'>
                     <ProjectCard />

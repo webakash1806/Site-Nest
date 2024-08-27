@@ -97,9 +97,9 @@ const packages = [
 
 const WebsiteDevelopmentCard = () => {
     return (
-        <>
+        <div className='container mx-auto'>
             <h1 className='mx-auto w-full text-center my-8 mt-16 sora-700 text-[2rem] text-[#0A165D]'>Pick your perfect plan</h1>
-            <div className='flex items-center justify-center w-full mx-auto overflow-x-hidden lg:px-28'>
+            <div className='flex items-center justify-center w-full px-2 mx-auto overflow-x-hidden sm:px-10'>
                 <Swiper
                     modules={[Autoplay, Pagination]}
                     spaceBetween={18}
@@ -107,7 +107,7 @@ const WebsiteDevelopmentCard = () => {
                     autoplay={{ delay: 3000, disableOnInteraction: true }}
                     breakpoints={{
                         700: { slidesPerView: 2 },
-                        1180: { slidesPerView: 3 },
+                        1040: { slidesPerView: 3 },
                         1460: { slidesPerView: 4 },
                     }}
                     pagination={{ clickable: true }}
@@ -115,7 +115,7 @@ const WebsiteDevelopmentCard = () => {
                 >
                     {packages.map((pkg, index) => (
                         <SwiperSlide key={index}>
-                            <div className="min-w-[18.3rem] max-w-[18.3rem] md:max-w-full mx-auto p-6 rounded-lg shadow-lg border-2 bg-[#f6f8ff] mb-10 pb-0">
+                            <div className="min-w-[18.3rem] max-w-[20rem] md:max-w-full mx-auto p-6 rounded-lg shadow-lg border-2 bg-[#f6f8ff] mb-10 pb-0">
                                 <div className="bg-[#2B4DFF] text-white text-xs px-4 py-1 rounded-full inline-block mb-2">
                                     {pkg.title}
                                 </div>
@@ -153,7 +153,7 @@ const WebsiteDevelopmentCard = () => {
                     ))}
                 </Swiper>
             </div>
-        </>
+        </div>
     );
 };
 

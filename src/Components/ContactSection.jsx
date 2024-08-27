@@ -55,11 +55,11 @@ const ContactSection = () => {
     };
 
     return (
-        <div className='flex bg-[#F5F6F7] flex-col px-[4vw] gap-8 md:flex-row md:justify-around items-center justify-center py-28 lg:pb-40'>
+        <div className='flex bg-[#F5F6F7] flex-wrap  gap-8 items-center justify-around py-12 sm:py-20 lg:pb-40'>
             {/* Left Column */}
             <div className="max-w-[34rem] px-2 md:max-w-[35rem] flex items-center">
-                <div className="mr-10">
-                    <h1 className='sora-600 leading-[3rem] mb-4 text-[2.5rem] text-[#0A165D]'>
+                <div className="">
+                    <h1 className='sora-600 leading-[3rem] mb-4 text-[2.1rem] sm:text-[2.6rem] text-[#0A165D]'>
                         Partner with Us for Comprehensive IT Services
                     </h1>
 
