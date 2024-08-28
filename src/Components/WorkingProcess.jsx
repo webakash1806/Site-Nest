@@ -5,10 +5,9 @@ import line from '../assets/line.png'
 
 
 const WorkingProcess = () => {
-    const phoneNumber = "916207234759"; // Replace with your phone number
-    const message = "Hello! I would like to start a project.";
+
     return (
-        <div className="container relative px-4 py-8 mx-auto mt-10 overflow-x-hidden">
+        <div className="container relative px-4 mx-auto mt-10 overflow-x-hidden">
             {/* Section Title */}
             <div className="text-center flex flex-col items-center justify-center mb-12 mx-auto max-w-[28rem] sora-700">
                 <h2 className="text-3xl text-[#040D43]">Our working process on how to grow your business</h2>

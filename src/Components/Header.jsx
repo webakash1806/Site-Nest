@@ -49,14 +49,13 @@ const Header = () => {
     // Handle scroll for sticky header effect with debounce
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
+            if (window.scrollY > 120) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
             }
         };
 
-        // Debounced handleScroll function
         const debouncedHandleScroll = debounce(handleScroll, 100);
 
         window.addEventListener('scroll', debouncedHandleScroll);

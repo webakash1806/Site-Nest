@@ -55,7 +55,7 @@ const ContactSection = () => {
     };
 
     return (
-        <div className='flex bg-[#F5F6F7] flex-wrap  gap-8 items-center justify-around py-12 sm:py-20 lg:pb-40'>
+        <div className='flex bg-[#F5F6F7] flex-wrap  gap-8 items-center justify-around py-12 sm:py-20'>
             {/* Left Column */}
             <div className="max-w-[34rem] px-2 md:max-w-[35rem] flex items-center">
                 <div className="">
