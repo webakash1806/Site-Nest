@@ -63,28 +63,7 @@ const Home = () => {
             image: service4,
             link: "/services/digital-marketing-services"
         },
-        {
-            title: "Ecommerce Setup <br/> Services",
-            icon: icon1,
-            image: service1,
-            link: "/services/e-commerce-services"
-        },
-        {
-            title: "Website Development <br/> Services",
-            icon: icon2,
-            image: service2,
-            link: "/services/web-services"
-        }, {
-            title: "Graphic Designing <br/> Services",
-            icon: icon3,
-            image: service3,
-            link: "/services/graphic-services"
-        }, {
-            title: `Digital Marketing <br/> Services`,
-            icon: icon4,
-            image: service4,
-            link: "/services/digital-marketing-services"
-        },
+
     ]
 
     useEffect(() => {

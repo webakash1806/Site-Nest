@@ -70,11 +70,11 @@ const Header = () => {
 
     return (
         <>
-            <div className={`sticky top-0 z-[50] ${isScrolled ? 'pb-0 bg-transparent' : 'py-5 bg-[#040D43]'}`}>
+            <div className={`sticky top-0 z-[10000] ${isScrolled ? 'pb-0 bg-transparent' : 'py-5 bg-[#040D43]'}`}>
                 <header
-                    className={`transition-all overflow-x-hidden duration-300 ease-in-out ${isScrolled
+                    className={`transition-all overflow-x-hidden duration-300 z-[10002] ease-in-out ${isScrolled
                         ? 'bg-[#02082a] backdrop-blur-lg text-white w-full border-b py-3 sm:py-4 md:py-6 border-gray-600 rounded-none'
-                        : 'bg-white py-4 md:py-5 text-black w-[96%]'
+                        : 'bg-white py-4 md:py-5 text-black w-[96%] md:w-[97%]'
                         }  px-4 rounded-lg mx-auto`}
                 >
                     <nav className="flex items-center justify-between">
@@ -167,7 +167,7 @@ const Header = () => {
             {/* Mobile Menu */}
             <div
                 ref={menuRef}
-                className={`fixed flex flex-col justify-between w-[15rem] transition-all duration-500 right-2  sm:right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg transform ${isOpen ? 'open-menu z-[100] top-[3.8rem] sm:top-[5.7rem]' : 'close-menu top-[3.2rem] sm:top-[3.7rem] z-[35]  border-0'} lg:hidden`}
+                className={`fixed flex flex-col justify-between w-[15rem] transition-all duration-500 right-2  sm:right-4 rounded-lg h-auto bg-[#f5f7ff] border-2 border-gray-300 text-gray-800 shadow-lg   transform ${isOpen ? isScrolled ? 'open-menu z-[10001] top-[3.8rem] sm:top-[4.5rem] md:top-[5.4rem]' : 'open-menu top-[5.8rem] z-[10001] mr-1 sm:mr-0 sm:top-[5.7rem] md:top-[6.2rem]' : 'close-menu top-[3.2rem] sm:top-[3.7rem] z-[35]  border-0'} lg:hidden `}
             >
                 <ul className="px-4 mt-8 space-y-4 sora-500">
                     <li>
