@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare } from 'react-icons/fa';
 import { FaSquarePhone, FaSquareXTwitter } from 'react-icons/fa6';
+import CalendlyButton from './Calendly';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -61,16 +62,16 @@ const Header = () => {
 
     return (
         <>
-            <div className={`sticky top-0 z-[10000] ${isScrolled ? 'pb-0 bg-transparent' : 'py-5 bg-[#040D43]'}`}>
+            <div className={`sticky top-0 z-[10001] ${isScrolled ? 'pb-0 bg-transparent' : 'py-5 bg-[#040D43]'}`}>
                 <header
                     className={`transition-all overflow-x-hidden duration-300 z-[10002] ease-in-out ${isScrolled
                         ? 'bg-[#02082a] backdrop-blur-lg text-white w-full border-b py-3 sm:py-4 md:py-6 border-gray-600 rounded-none'
-                        : 'bg-white py-4 md:py-5 text-black w-[96%] md:w-[97%]'
+                        : 'bg-white py-4 md:py-5 lg:py-3 text-black w-[96%] md:w-[97%]'
                         }  px-4 rounded-lg mx-auto`}
                 >
                     <nav className="flex items-center justify-between">
                         <div className="text-xl font-bold">MyLogo</div>
-                        <ul className="hidden space-x-6 lg:flex sora-500">
+                        <ul className="hidden space-x-6 lg:flex lg:items-center sora-500">
                             <li>
                                 <Link
                                     to="/"
@@ -119,18 +120,14 @@ const Header = () => {
                                     Contact
                                 </Link>
                             </li>
-                            <li className='text-[1.45rem] flex items-center gap-2'>
-                                <Link to={"https://www.instagram.com/binarywisetech/?hl=en"} target='_blank' className=''>
-                                    <FaInstagramSquare />
+                            <li>
+                                <Link to={'/schedule-meeting'}>
+                                    <button className='bg-[#3B5AFF] hover:bg-[#1e44ff]  text-white w-full p-[8px] text-[0.95rem] px-5 rounded-md'>
+                                        Book a Meeting
+                                    </button>
                                 </Link>
-                                <Link to={""} className=''>
-                                    <FaFacebookSquare />
-                                </Link>
-                                <Link to={""} className=''>
-                                    <FaSquareXTwitter />
-                                </Link>
-                                <Link to={""} className=''></Link>
                             </li>
+
                         </ul>
                         <div className="lg:hidden">
                             <button aria-label="Menu icon" onClick={toggleMenu} className="">
@@ -154,7 +151,7 @@ const Header = () => {
                 </header>
             </div>
             {/* Black Overlay */}
-            {isOpen && <div className="fixed inset-0 bg-[#00072c] opacity-70 z-[30]" onClick={() => setIsOpen(false)}></div>}
+            {isOpen && <div className="fixed inset-0 bg-[#00072c] opacity-70 z-[10000]" onClick={() => setIsOpen(false)}></div>}
             {/* Mobile Menu */}
             <div
                 ref={menuRef}
@@ -215,7 +212,11 @@ const Header = () => {
                             Contact
                         </Link>
                     </li>
-
+                    <Link to={'/schedule-meeting'} onClick={() => setIsOpen(false)}>
+                        <button className='bg-[#3B5AFF] hover:bg-[#1e44ff]  text-white w-full p-[10px] rounded-md'>
+                            Book a Meeting
+                        </button>
+                    </Link>
                 </ul>
                 <div className='text-[1.68rem] w-fit mx-auto mb-6 flex items-center gap-3'>
                     <Link to={"https://www.instagram.com/binarywisetech/?hl=en"} target='_blank' className=''>

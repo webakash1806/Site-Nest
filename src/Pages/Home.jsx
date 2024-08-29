@@ -26,6 +26,7 @@ import BlueBtn from '../Components/BlueBtn';
 import { Link } from 'react-router-dom';
 import clientImages from '../Hooks/clientsLogo'
 import Client from '../Components/client'
+import Testimonial from '../Components/Testimonial'
 
 // Install Swiper modules
 SwiperCore.use([Autoplay, Pagination]);
@@ -154,7 +155,8 @@ const Home = () => {
             <AboutSection btn={true} />
             <WorkingProcess />
             <DetailSection />
-            <div className='flex flex-col items-center justify-center mt-20 mb-10 sm:px-10 lg:mt-28'>
+            <Testimonial />
+            {/* <div className='flex flex-col items-center justify-center mt-20 mb-10 sm:px-10 lg:mt-28'>
                 <h1 className='sora-700 leading-[3rem] text-center mb-4 text-[2.2rem] md:text-[3rem] md:leading-[3.3rem] max-w-[25rem] sm:max-w-full text-[#0A165D]'>Our <br className='md:hidden' /> Latest Projects </h1>
                 <div className='grid gap-8 mt-4 grid-1 sm:grid-cols-2 lg:grid-cols-4'>
                     <ProjectCard />
@@ -162,7 +164,7 @@ const Home = () => {
                     <ProjectCard />
                     <ProjectCard />
                 </div>
-            </div>
+            </div> */}
             {/* <TeamCarousel /> */}
             <ContactSection />
         </div>

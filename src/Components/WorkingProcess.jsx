@@ -65,7 +65,7 @@ const WorkingProcess = () => {
             </div>
 
             {/* Line Image */}
-            <div className="flex absolute w-full items-center top-[24rem] z-[-1] justify-center mt-8">
+            <div className="flex absolute w-full items-center top-[22rem] z-[-1] justify-center mt-8">
                 <img src={line} alt="Line" className="hidden w-fit lg:block" />
             </div>
         </div>

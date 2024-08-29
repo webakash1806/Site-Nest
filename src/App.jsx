@@ -10,6 +10,7 @@ import routeTitles from './Hooks/routeTitles';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import seoMetaDescriptions from './Hooks/seoMetaDescriptions';
 import seoKeywords from './Hooks/seoKeywords';
+import CalendlyButton from './Components/Calendly';
 
 // Lazy load components
 const Home = React.lazy(() => import('./Pages/Home'));
@@ -164,6 +165,7 @@ const App = () => {
           <Route path='/services/graphic-services' element={<GraphicDesignService />} />
           <Route path='/services/digital-marketing-services' element={<DigitalMarketingService />} />
           <Route path='/services' element={<ServicePage />} />
+          <Route path='/schedule-meeting' element={<CalendlyButton />} />
         </Routes>
       </Suspense>
       <Footer />
