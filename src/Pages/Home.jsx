@@ -25,7 +25,7 @@ import heroVideo from '../assets/hero-video.webm'; // Replace with your actual v
 import BlueBtn from '../Components/BlueBtn';
 import { Link } from 'react-router-dom';
 import clientImages from '../Hooks/clientsLogo'
-import Testimonial from '../Components/Testimonial'
+import Client from '../Components/client'
 
 // Install Swiper modules
 SwiperCore.use([Autoplay, Pagination]);
@@ -39,6 +39,10 @@ const Home = () => {
 
     // Sample client images (replace these with actual client images)
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    }, [])
 
     const data = [
         {
@@ -63,13 +67,7 @@ const Home = () => {
             image: service4,
             link: "/services/digital-marketing-services"
         },
-
     ]
-
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    }, [])
 
     return (
         <div className=''>
@@ -145,32 +143,9 @@ const Home = () => {
 
                 </section>
             </section>
-            <div className=" relative shadow-md w-full mx-auto py-3 pt-6 z-[10] bg-[#F4F6F8]">
-                <h2 className=" text-[1.7rem] font-bold mb-3 text-center sora-700 text-[#040D43] md:text-4xl">
-                    Our Happy Clients
-                </h2>
-                <Swiper
-                    slidesPerView={width / 150}
-                    spaceBetween={30}
-                    loop={true}
-                    autoplay={{ delay: 1, disableOnInteraction: false }}
-                    className="mySwiper"
-                    speed={3500}
-
-                >
-                    {clientImages.concat(clientImages).map((img, index) => (
-                        <SwiperSlide key={index} className="flex justify-center">
-                            <img
-                                src={img}
-                                alt={`Client ${index + 1}`}
-                                className="w-[100px] cursor-pointer mx-[25px] grayscale duration-300 hover:grayscale-0"
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+            <Client />
             <div className='flex flex-col items-center justify-center mt-12 mb-10 lg:mt-24'>
-                <h1 className='sora-700 leading-[3rem] text-center mb-4 text-[2rem] md:text-[2.7rem] md:leading-[3.3rem] max-w-[25rem] sm:max-w-full text-[#0A165D]'>Our <br className='md:hidden' /> awesome services to <br className='hidden sm:block' /> give you success</h1>
+                <h1 className='sora-700 leading-[3rem] text-center mb-4 text-[2.2rem] md:text-[3rem] md:leading-[3.3rem] max-w-[25rem] sm:max-w-full text-[#0A165D]'>Our <br className='md:hidden' /> awesome services to <br className='hidden sm:block' /> give you success</h1>
                 <div className='grid gap-8 mt-4 grid-1 sm:grid-cols-2 lg:grid-cols-4'>
                     {data?.map((dat, ind) => <ServiceCard key={ind} data={dat} />)}
                 </div>
@@ -179,7 +154,7 @@ const Home = () => {
             <AboutSection btn={true} />
             <WorkingProcess />
             <DetailSection />
-            {/* <div className='flex flex-col items-center justify-center mt-20 mb-10 sm:px-10 lg:mt-28'>
+            <div className='flex flex-col items-center justify-center mt-20 mb-10 sm:px-10 lg:mt-28'>
                 <h1 className='sora-700 leading-[3rem] text-center mb-4 text-[2.2rem] md:text-[3rem] md:leading-[3.3rem] max-w-[25rem] sm:max-w-full text-[#0A165D]'>Our <br className='md:hidden' /> Latest Projects </h1>
                 <div className='grid gap-8 mt-4 grid-1 sm:grid-cols-2 lg:grid-cols-4'>
                     <ProjectCard />
@@ -187,9 +162,8 @@ const Home = () => {
                     <ProjectCard />
                     <ProjectCard />
                 </div>
-            </div> */}
+            </div>
             {/* <TeamCarousel /> */}
-            <Testimonial />
             <ContactSection />
         </div>
     )

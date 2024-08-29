@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare } from "react-icons/fa";
-import { FaSquarePhone, FaSquarePhoneFlip, FaSquareXTwitter } from "react-icons/fa6";
+import { FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare } from 'react-icons/fa';
+import { FaSquarePhone, FaSquareXTwitter } from 'react-icons/fa6';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,19 +12,15 @@ const Header = () => {
     // Debounce function
     const debounce = (func, delay) => {
         let timeout;
-        return function (...args) {
-            if (timeout) {
-                clearTimeout(timeout);
-            }
-            timeout = setTimeout(() => {
-                func.apply(this, args);
-            }, delay);
+        return (...args) => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func(...args), delay);
         };
     };
 
     const toggleMenu = (event) => {
         event.stopPropagation(); // Prevent click event from bubbling up to the window
-        setIsOpen(!isOpen);
+        setIsOpen((prev) => !prev);
     };
 
     // Close menu on click outside
@@ -49,21 +45,16 @@ const Header = () => {
     // Handle scroll for sticky header effect with debounce
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 120) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
+            setIsScrolled(window.scrollY > 120);
         };
 
         const debouncedHandleScroll = debounce(handleScroll, 100);
-
         window.addEventListener('scroll', debouncedHandleScroll);
 
         return () => {
             window.removeEventListener('scroll', debouncedHandleScroll);
         };
-    }, []);
+    }, [debounce]);
 
     // Function to determine if the route is active
     const isActive = (path) => location.pathname === path;
