@@ -13,7 +13,7 @@ const CalendlyButton = () => {
                     backgroundColor: 'fff',
                     hideEventTypeDetails: false,
                     hideLandingPageDetails: false,
-                    primaryColor: '040D43',
+                    primaryColor: '2A4CFF',
                     textColor: '040D43'
                 }}
                 url="https://calendly.com/binarywisetech" />
