@@ -16,7 +16,7 @@ const WorkingProcess = () => {
             {/* Process Steps */}
             <div className="container flex flex-col mx-auto w-fit lg:justify-around lg:gap-20 lg:flex-row">
                 {/* Step 1 */}
-                <div className="px-4 mb-8 " data-aos="fade-up" data-aos-duration="600">
+                <div className="px-4 mb-8 " >
                     <div className="flex flex-col items-center ">
 
                         <div className="w-[15rem] h-[15rem] flex-shrink-0">
@@ -32,7 +32,7 @@ const WorkingProcess = () => {
                 </div>
 
                 {/* Step 2 */}
-                <div className="px-4 mb-8 " data-aos="fade-up" data-aos-duration="800">
+                <div className="px-4 mb-8 " >
                     <div className="flex flex-col items-center ">
                         <div className="w-[15rem] h-[15rem] flex-shrink-0">
 
@@ -48,7 +48,7 @@ const WorkingProcess = () => {
                 </div>
 
                 {/* Step 3 */}
-                <div className="px-4 mb-8 " data-aos="fade-up" data-aos-duration="1000">
+                <div className="px-4 mb-8 " >
                     <div className="flex flex-col items-center ">
 
                         <div className="w-[15rem] h-[15rem] flex-shrink-0">

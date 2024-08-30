@@ -49,7 +49,7 @@ const Header = () => {
             setIsScrolled(window.scrollY > 50);
         };
 
-        const debouncedHandleScroll = debounce(handleScroll, 100);
+        const debouncedHandleScroll = debounce(handleScroll, 50);
         window.addEventListener('scroll', debouncedHandleScroll);
 
         return () => {
@@ -65,7 +65,7 @@ const Header = () => {
             <div className={`sticky top-0 z-[10001] ${isScrolled ? 'pb-0 bg-transparent' : 'py-5 bg-[#040D43]'}`}>
                 <header
                     className={`transition-all overflow-x-hidden duration-300 z-[10002] ease-in-out ${isScrolled
-                        ? 'bg-[#02082a] backdrop-blur-lg text-white w-full border-b py-3 sm:py-4 md:py-6 border-gray-600 rounded-none'
+                        ? 'bg-[#02082a] backdrop-blur-lg text-white w-full border-b py-3 sm:py-4 md:py-4 border-gray-600 rounded-none'
                         : 'bg-white py-4 md:py-5 lg:py-3 text-black w-[96%] md:w-[97%]'
                         }  px-4 rounded-lg mx-auto`}
                 >

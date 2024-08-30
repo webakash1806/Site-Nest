@@ -17,7 +17,8 @@ import service4 from '../assets/service4.png'
 import WorkingProcess from '../Components/WorkingProcess'
 import { Autoplay, Pagination } from 'swiper/modules';
 import SwiperCore from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -41,6 +42,7 @@ const Home = () => {
     // Sample client images (replace these with actual client images)
 
     useEffect(() => {
+        AOS.init({ duration: 1200 });
         window.scrollTo({ top: 0, behavior: 'smooth' });
 
     }, [])
@@ -87,17 +89,17 @@ const Home = () => {
 
                 <div className="relative justify-center z-10 sm:w-[80%] w-[99%] lg:w-[95%] px-4 mx-auto text-center flex flex-col items-center">
                     <div className='relative lg:flex-row lg:justify-between min-h-[66vh] mb-4 z-[100] flex items-center justify-center flex-col'>
-                        <h1 className="text-white text-[1.8rem] sm:text-[2.5rem] sora-600 md:text-[3rem] lg:text-[3.8rem] lg:text-start mb-4 leading-[2.8rem] sm:leading-[3.2rem] md:leading-[4.5rem] lg:leading-[5.7rem]">
+                        <h1 className="text-white text-[1.8rem] sm:text-[2.5rem] sora-600 md:text-[3rem] lg:text-[3.8rem] lg:text-start mb-4 leading-[2.8rem] sm:leading-[3.2rem] md:leading-[4.5rem] lg:leading-[5.7rem]" data-aos="fade-up">
                             Your Vision,
                             <br /> Our Development,
                             <br />
                             Engineered for Success
                         </h1>
                         <div className='flex flex-col lg:items-start mb-8 lg:w-[35%] mt-2 md:mt-0 items-center justify-center'>
-                            <p className="text-white leading-[1.8rem] lg:text-start sora-400 text-[0.95rem] sm:text-[1rem] lg:text-[1.1rem] mb-8 tracking-wide">
-                                We design and develop visually stunning and highly functional websites, along with captivating graphics, to elevate your brand's presence, engage your audience, and drive measurable success across all digital platforms.
+                            <p className="text-white leading-[1.8rem] lg:text-start sora-400 text-[0.95rem] sm:text-[1rem] lg:text-[1.1rem] mb-8 tracking-wide" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+                                We design and develop visually stunning and highly functional websites, along with captivating graphics, to elevate your brand&apos;s presence, engage your audience, and drive measurable success across all digital platforms.
                             </p>
-                            <div className="flex space-x-4">
+                            <div className="flex space-x-4" data-aos="fade-up" data-aos-duration="1600" data-aos-anchor-placement="top-bottom">
                                 <BlueBtn to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`} text={"Talk with us"} />
                                 <Link to='/services' className="px-6 font-semibold text-blue-700 transition py-[1rem] bg-white rounded-md">
                                     Our Services
@@ -115,7 +117,7 @@ const Home = () => {
                             }}
                         ></div>
 
-                        <div className="relative w-full h-full overflow-hidden rounded-xl">
+                        <div className="relative w-full h-full overflow-hidden rounded-xl " data-aos="zoom-in" data-aos-duration="1000">
                             {/* Bluish overlay */}
                             <div className="absolute inset-0 bg-[#040D43] opacity-10 z-[101]"></div>
                             {/* Replace the image with a video */}
@@ -154,7 +156,9 @@ const Home = () => {
             </div>
             <WebsiteDevelopmentCard />
             <AboutSection btn={true} />
-            <WorkingProcess />
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1600">
+                <WorkingProcess />
+            </div>
             <DetailSection />
             <Testimonial />
             {/* <div className='flex flex-col items-center justify-center mt-20 mb-10 sm:px-10 lg:mt-28'>

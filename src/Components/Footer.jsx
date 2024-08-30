@@ -90,7 +90,7 @@ const Footer = () => {
 
                                     <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Privacy Policy</Link></li>
                                     <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Terms &amp; Conditions</Link></li>
-                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/">Faqs</Link></li>
+                                    <li className="text-[#e0e4ff] sora-300 leading-8 text-[0.9rem] hover:text-white"><Link to="/FAQ">Faqs</Link></li>
                                 </ul>
                             </div>
                         </div>

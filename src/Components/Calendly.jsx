@@ -9,9 +9,9 @@ const CalendlyButton = () => {
 
                 <InlineWidget
                     styles={{
-                        height: '1000px',
+                        height: '1500px',
                         padding: '10px',
-                        maxWidth: '700px',
+                        maxWidth: '1500px',
                         width: '96vw'
                     }}
                     pageSettings={{
