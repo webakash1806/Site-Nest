@@ -86,7 +86,7 @@ const App = () => {
   const routeKeywords = getKeywords(currentPath);
 
   return (
-    <>
+    <div>
       <HelmetProvider>
         <Helmet>
           {/* Primary Meta Tags */}
@@ -180,7 +180,7 @@ const App = () => {
           <MdKeyboardDoubleArrowUp className='text-[1.7rem]' />
         </button>
       )}
-    </>
+    </div>
   );
 };
 
