@@ -212,8 +212,8 @@ const Header = () => {
                             Contact
                         </Link>
                     </li>
-                    <Link to={'/schedule-meeting'} onClick={() => setIsOpen(false)}>
-                        <button className='bg-[#3B5AFF] hover:bg-[#1e44ff]  text-white w-full p-[10px] rounded-md'>
+                    <Link className='' to={'/schedule-meeting'} onClick={() => setIsOpen(false)}>
+                        <button className='bg-[#3B5AFF] mt-4 hover:bg-[#1e44ff]  text-white w-full p-[9px] tracking-wide text-[0.95rem] rounded-md'>
                             Book a Meeting
                         </button>
                     </Link>

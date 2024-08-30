@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { lazy, useEffect } from 'react'
 import ServiceCard from '../Components/ServiceCard'
 import AboutSection from '../Components/AboutSection'
 import DetailSection from '../Components/DetailSection'
@@ -125,6 +125,7 @@ const Home = () => {
                                 loop
                                 muted
                                 playsInline
+                                aria-label='Video representation of main website overview'
                                 className="h-full w-full relative z-[100] rounded-xl"
                             />
                         </div>

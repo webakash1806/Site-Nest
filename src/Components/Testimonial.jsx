@@ -45,7 +45,7 @@ const Testimonial = () => {
         dots: false,
         infinite: true,
         speed: 2000,
-        slidesToShow: 3,
+        slidesToShow: 6,
         slidesToScroll: 0.5,
         autoplay: true,
         autoplaySpeed: 5000,
@@ -53,7 +53,7 @@ const Testimonial = () => {
         verticalSwiping: true,  // Enable vertical swiping
         pauseOnHover: true,
         arrows: false, // Remove arrows
-        rows: 1, // Use only one row for the grid
+        rows: 6, // Use only one row for the grid
         slidesPerRow: 3, // 3 columns per row
         responsive: [
             {
@@ -138,7 +138,7 @@ const Testimonial = () => {
                     Listen by their own words.
                 </p>
             </div>
-            <div className="relative overflow-hidden flex flex-col h-[100vh] items-center justify-start w-full p-4 pt-10 pb-10 bg-[#fefefe]">
+            <div className="relative overflow-hidden flex flex-col h-[100vh]   items-center justify-start w-full p-4 pt-10 pb-10 bg-[#fefefe]">
                 <Slider {...settings} className="w-full max-w-screen-xl">
                     {testimonials?.concat(testimonials).map((testimonial, index) => (
                         <div
@@ -149,7 +149,7 @@ const Testimonial = () => {
                         </div>
                     ))}
                 </Slider>
-                <div className="absolute bottom-0 left-0 right-0 h-[30rem] z-[100] pointer-events-none bg-gradient-to-t from-white via-[#ffffffa8] to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-[20rem] z-[100] pointer-events-none bg-gradient-to-t from-white via-[#ffffffa8] to-transparent"></div>
             </div>
         </>
     );

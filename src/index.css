@@ -235,17 +235,3 @@
   display: inline-block;
   margin: 0 16px;
 }
-
-/* Adjust other styles if needed */
-#calendly-container {
-  z-index: 1000001 !important;
-  /* Make sure the Calendly container is on top */
-  position: relative !important;
-}
-
-/* Optional: Style the close button further if necessary */
-#calendly-overlay .calendly-close svg {
-  fill: #ff0000;
-  width: 24px;
-  height: 24px;
-}
