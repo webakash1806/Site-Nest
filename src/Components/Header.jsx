@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare } from 'react-icons/fa';
 import { FaSquarePhone, FaSquareXTwitter } from 'react-icons/fa6';
@@ -11,13 +11,13 @@ const Header = () => {
     const location = useLocation();
 
     // Debounce function
-    const debounce = (func, delay) => {
+    const debounce = useCallback((func, delay) => {
         let timeout;
         return (...args) => {
             clearTimeout(timeout);
             timeout = setTimeout(() => func(...args), delay);
         };
-    };
+    }, []);
 
     const toggleMenu = (event) => {
         event.stopPropagation(); // Prevent click event from bubbling up to the window
@@ -46,7 +46,7 @@ const Header = () => {
     // Handle scroll for sticky header effect with debounce
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 120);
+            setIsScrolled(window.scrollY > 50);
         };
 
         const debouncedHandleScroll = debounce(handleScroll, 100);

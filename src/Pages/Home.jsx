@@ -125,7 +125,7 @@ const Home = () => {
                                 loop
                                 muted
                                 playsInline
-                                aria-label='Video representation of main website overview'
+                                aria-label='Video representation of main website'
                                 className="h-full w-full relative z-[100] rounded-xl"
                             />
                         </div>
