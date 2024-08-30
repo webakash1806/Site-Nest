@@ -1,6 +1,6 @@
 import React from 'react'
 import BreadCrumbs from '../Components/BreadCrumbs';
-import webService from '../assets/webservice.png'
+import webService from '../assets/webservice.webp'
 import { FaCheckCircle } from 'react-icons/fa';
 import WebsiteDevelopmentCard from '../Components/WebsiteDevelopmentCard';
 const WebService = () => {
@@ -14,8 +14,8 @@ const WebService = () => {
         <div>
             <BreadCrumbs headText={"Website Development"} items={breadcrumbItems} />
             <section id="about" className="py-10 bg-white lg:mx-20">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-col lg:flex-row lg:items-center justify-center">
+                <div className="container px-4 mx-auto">
+                    <div className="flex flex-col justify-center lg:flex-row lg:items-center">
                         {/* Video Section */}
                         <div className="lg:w-[43%] mb-6 lg:mb-0">
 
@@ -28,25 +28,25 @@ const WebService = () => {
                             <h3 className="text-[1.8rem] sora-700 text-[#040D43] mb-4">
                                 Why Is a Website Important?
                             </h3>
-                            <ul className="list-none mb-6 sora-500">
+                            <ul className="mb-6 list-none sora-500">
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>24/7 Online Presence.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Information Exchange.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Establish Credibility and Build Trust.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Growth Opportunity.</span>
                                 </li>
                                 <li className="flex items-center mb-2">
-                                    <FaCheckCircle className="text-green-500 mr-2" />
+                                    <FaCheckCircle className="mr-2 text-green-500" />
                                     <span>Marketing.</span>
                                 </li>
                             </ul>

@@ -1,6 +1,6 @@
 import React from 'react';
 import BreadCrumbs from '../Components/BreadCrumbs';
-import digitalMarketingService from '../assets/service4.png'; // Example image for digital marketing service
+import digitalMarketingService from '../assets/service4.webp'; // Example image for digital marketing service
 import { FaCheckCircle } from 'react-icons/fa';
 import CTAsection from '../Components/CTAsection';
 import ServiceDetailCard from '../Components/ServiceDetailCard';

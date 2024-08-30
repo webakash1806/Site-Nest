@@ -1,6 +1,6 @@
 import React from 'react';
 import BreadCrumbs from '../Components/BreadCrumbs';
-import graphicDesignService from '../assets/service3.png'; // Example image for graphic design service
+import graphicDesignService from '../assets/service3.webp'; // Example image for graphic design service
 import { FaCheckCircle } from 'react-icons/fa';
 import CTAsection from '../Components/CTAsection';
 import ServiceDetailCard from '../Components/ServiceDetailCard';

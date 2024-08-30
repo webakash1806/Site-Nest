@@ -1,6 +1,6 @@
 import React from 'react';
 import BreadCrumbs from '../Components/BreadCrumbs';
-import ecommerceService from '../assets/service1.png'; // Example image for e-commerce service
+import ecommerceService from '../assets/service1.webp'; // Example image for e-commerce service
 import { FaCheckCircle } from 'react-icons/fa';
 import WebsiteDevelopmentCard from '../Components/WebsiteDevelopmentCard';
 import CTAsection from '../Components/CTAsection';

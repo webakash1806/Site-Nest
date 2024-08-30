@@ -1,6 +1,6 @@
 import React from 'react';
 import icon from '../assets/icon2.svg';
-import service from '../assets/service2.png';
+import service from '../assets/service2.webp';
 
 const ProjectCard = () => {
     return (

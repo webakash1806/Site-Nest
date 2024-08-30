@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // src/index.js or src/App.js
-import service2 from '../assets/service2.png'
+import service2 from '../assets/service2.webp'
 import 'remixicon/fonts/remixicon.css';
 const width = window.innerWidth;
 
