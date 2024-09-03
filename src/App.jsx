@@ -12,6 +12,7 @@ import seoMetaDescriptions from './Hooks/seoMetaDescriptions';
 import seoKeywords from './Hooks/seoKeywords';
 import CalendlyButton from './Components/Calendly';
 import FAQPage from './Pages/FAQPage';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
 
 // Lazy load components
 const Home = React.lazy(() => import('./Pages/Home'));
@@ -168,6 +169,7 @@ const App = () => {
           <Route path='/services' element={<ServicePage />} />
           <Route path='/schedule-meeting' element={<CalendlyButton />} />
           <Route path='/FAQ' element={<FAQPage />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         </Routes>
       </Suspense>
       <Footer />

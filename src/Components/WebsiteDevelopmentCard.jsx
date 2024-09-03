@@ -98,7 +98,7 @@ const packages = [
 const WebsiteDevelopmentCard = () => {
     return (
         <div className='mx-auto '>
-            <h1 className='mx-auto w-full text-center my-8 mt-16 sora-700 text-[2rem] text-[#0A165D]'>Pick your perfect plan</h1>
+            <h1 className='mx-auto w-full text-center my-8 mt-16 sora-700 text-[2rem] text-[#0A165D]'>Pick your perfect web plan</h1>
             <div className='flex items-center justify-center w-full px-2 mx-auto overflow-x-hidden lg:px-16'>
                 <Swiper
                     modules={[Autoplay, Pagination]}
