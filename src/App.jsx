@@ -90,50 +90,50 @@ const App = () => {
     <div>
       <HelmetProvider>
         <Helmet>
-          {/* Primary Meta Tags */}
+        
           <title>{`Binary Wise Tech | ${routeTitle}`}</title>
           <meta name="author" content="Akash Kumar Singh | webakash1806" />
           <meta name="description" content={routeDesc} />
           <meta name="keywords" content={routeKeywords} />
 
-          {/* Open Graph / Facebook Meta Tags */}
+          
           <meta property="og:type" content="website" />
           <meta property="og:title" content={routeTitle} />
           <meta property="og:description" content={routeDesc} />
-          <meta property="og:image" content={"routeImage"} />  {/* Include a representative image URL */}
-          <meta property="og:url" content={"routeUrl"} /> {/* Include the URL of the page */}
+          <meta property="og:image" content={"routeImage"} />  
+          <meta property="og:url" content={"routeUrl"} />
           <meta property="og:site_name" content="Binary Wise Tech" />
 
-          {/* Twitter Card Meta Tags */}
+         
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content={routeTitle} />
           <meta name="twitter:description" content={routeDesc} />
-          <meta name="twitter:image" content={"routeImage"} /> {/* Include the same image used for Open Graph */}
-          <meta name="twitter:site" content="@yourTwitterHandle" /> {/* Replace with your Twitter handle */}
+          <meta name="twitter:image" content={"routeImage"} /> 
+          <meta name="twitter:site" content="@yourTwitterHandle" /> 
           <meta name="twitter:creator" content="@yourTwitterHandle" />
 
-          {/* Mobile Viewport Meta Tag */}
+        
           <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-          {/* Canonical Link */}
+         
           <link rel="canonical" href={"http://localhost:5173/"} />
 
-          {/* Robots Meta Tags */}
-          <meta name="robots" content="index, follow" /> {/* Ensures search engines can index and follow links */}
+         
+          <meta name="robots" content="index, follow" /> 
 
-          {/* Favicons */}
+        
           <link rel="icon" href="/favicon.ico" sizes="any" />
           <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
           <link rel="manifest" href="/manifest.json" />
 
-          {/* Additional Meta Tags for SEO */}
+         
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="theme-color" content="#FFFFFF" /> {/* Defines the theme color for mobile browsers */}
-          <meta name="rating" content="General" /> {/* Indicates the content rating of your page */}
+          <meta name="theme-color" content="#FFFFFF" /> 
+          <meta name="rating" content="General" />
 
-          {/* Other Open Graph Tags */}
-          <meta property="og:locale" content="en_US" /> {/* Locale settings */}
+         
+          <meta property="og:locale" content="en_US" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
         </Helmet>
